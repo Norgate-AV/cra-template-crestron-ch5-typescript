@@ -1,6 +1,6 @@
 {
-    "name": "cra-template-crestron-ch5-typescript",
-    "version": "0.1.0",
+    "name": "@norgate-av/cra-template-crestron-ch5-typescript",
+    "version": "0.1.1",
     "keywords": [
         "ch5",
         "crestron",
