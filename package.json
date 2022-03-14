@@ -1,6 +1,6 @@
 {
     "name": "@norgate-av/cra-template-crestron-ch5-typescript",
-    "version": "0.1.1",
+    "version": "0.0.0-development",
     "keywords": [
         "ch5",
         "crestron",
@@ -25,5 +25,11 @@
     "files": [
         "template",
         "template.json"
-    ]
+    ],
+    "scripts": {
+        "semantic-release": "semantic-release --branches master"
+    },
+    "devDependencies": {
+        "semantic-release": "^19.0.2"
+    }
 }
