@@ -27,9 +27,16 @@
         "template.json"
     ],
     "scripts": {
-        "semantic-release": "semantic-release --branches master"
+        "semantic-release": "semantic-release --branches master",
+        "commit": "git-cz"
     },
     "devDependencies": {
+        "cz-conventional-changelog": "3.3.0",
         "semantic-release": "^19.0.2"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
     }
 }
