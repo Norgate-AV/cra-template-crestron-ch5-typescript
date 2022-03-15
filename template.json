@@ -3,9 +3,9 @@
         "dependencies": {
             "@crestron/ch5-crcomlib": "^1.2.0",
             "@crestron/ch5-webxpanel": "^1.2.5",
-            "@testing-library/jest-dom": "^5.11.4",
-            "@testing-library/react": "^11.1.0",
-            "@testing-library/user-event": "^12.1.10",
+            "@testing-library/jest-dom": "^5.16.2",
+            "@testing-library/react": "^12.1.4",
+            "@testing-library/user-event": "^13.5.0",
             "@types/jest": "^26.0.15",
             "@types/node": "^16.11.26",
             "@types/node-sass": "^4.11.1",
