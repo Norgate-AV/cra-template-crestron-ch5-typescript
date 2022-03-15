@@ -22,7 +22,7 @@
             "clean:build": "rimraf build",
             "clean:dist": "rimraf dist",
             "clean:all": "yarn clean:build && yarn clean:dist",
-            "copylib": "ncp ./node_modules/@crestron/ch5-crcomlib/build_bundles/umd/cr-com-lib.js public/cr-com-lib.js",
+            "copylib": "ncp $npm_package_crestron_crcomlib_bundle_path_umd public/$npm_package_crestron_crcomlib_bundle_name",
             "start": "npm run copylib && react-scripts start",
             "build": "yarn clean:build && npm run copylib && react-scripts build",
             "serve": "serve -s build",
