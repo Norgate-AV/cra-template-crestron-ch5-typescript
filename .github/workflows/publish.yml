@@ -24,7 +24,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         
-    - name: Install dependancies
+    - name: Install dependencies
       run: yarn
 
     - name: Build
@@ -48,7 +48,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         
-    - name: Install dependancies
+    - name: Install dependencies
       run: yarn
     
     - name: Build
