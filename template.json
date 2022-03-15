@@ -19,12 +19,15 @@
             "typescript": "^4.1.2"
         },
         "scripts": {
+            "clean:build": "rimraf build",
+            "clean:dist": "rimraf dist",
+            "clean:all": "yarn clean:build && yarn clean:dist",
             "copylib": "ncp ./node_modules/@crestron/ch5-crcomlib/build_bundles/umd/cr-com-lib.js public/cr-com-lib.js",
             "start": "npm run copylib && react-scripts start",
-            "build": "npm run copylib && react-scripts build",
+            "build": "yarn clean:build && npm run copylib && react-scripts build",
             "serve": "serve -s build",
             "build-and-serve": "yarn build && yarn serve",
-            "build:archive": "yarn ch5-cli archive -p ch5-react -P samplesource=ch5-react -d build -o dist",
+            "build:archive": "yarn clean:dist && yarn ch5-cli archive -p ch5-react -P samplesource=ch5-react -d build -o dist",
             "build:deploy": "yarn ch5-cli deploy -p -H panel -t touchscreen dist/ch5-react.ch5z",
             "build:onestep": "yarn build && yarn build:archive && yarn build:deploy"
         },
@@ -52,7 +55,9 @@
         "devDependencies": {
             "@crestron/ch5-utilities-cli": "^0.1.52",
             "@types/ncp": "^2.0.5",
-            "ncp": "^2.0.0"
+            "@types/rimraf": "^3.0.2",
+            "ncp": "^2.0.0",
+            "rimraf": "^3.0.2"
         }
     }
 }
