@@ -32,7 +32,8 @@
             "build:onestep": "yarn build && yarn build:archive && yarn build:deploy",
             "resolve:crcomlib": "jq '.main = \"build_bundles/cjs/cr-com-lib.js\"' $npm_package_crestron_crcomlib_packageJson | sponge $npm_package_crestron_crcomlib_packageJson",
             "lint": "eslint .",
-            "lint:fix": "eslint --fix ."
+            "lint:fix": "eslint --fix .",
+            "commit": "git-cz"
         },
         "eslintConfig": {
             "extends": ["react-app", "react-app/jest"]
@@ -61,6 +62,7 @@
             "@types/rimraf": "^3.0.2",
             "@typescript-eslint/eslint-plugin": "^5.14.0",
             "@typescript-eslint/parser": "^5.14.0",
+            "cz-conventional-changelog": "3.3.0",
             "eslint": "^8.11.0",
             "eslint-config-airbnb": "^19.0.4",
             "eslint-config-airbnb-typescript": "^16.1.2",
@@ -75,6 +77,11 @@
             "prettier": "^2.5.1",
             "rimraf": "^3.0.2",
             "sponge": "^0.1.0"
+        },
+        "config": {
+            "commitizen": {
+                "path": "./node_modules/cz-conventional-changelog"
+            }
         }
     }
 }
