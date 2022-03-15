@@ -30,7 +30,9 @@
             "build:archive": "yarn clean:dist && yarn ch5-cli archive -p $npm_package_name -P samplesource=$npm_package_name -d build -o dist",
             "build:deploy": "yarn ch5-cli deploy -p -H $npm_package_crestron_project_touchscreen_url -t touchscreen dist/$npm_package_name.ch5z",
             "build:onestep": "yarn build && yarn build:archive && yarn build:deploy",
-            "resolve:crcomlib": "jq '.main = \"build_bundles/cjs/cr-com-lib.js\"' $npm_package_crestron_crcomlib_packageJson | sponge $npm_package_crestron_crcomlib_packageJson"
+            "resolve:crcomlib": "jq '.main = \"build_bundles/cjs/cr-com-lib.js\"' $npm_package_crestron_crcomlib_packageJson | sponge $npm_package_crestron_crcomlib_packageJson",
+            "lint": "eslint .",
+            "lint:fix": "eslint --fix ."
         },
         "eslintConfig": {
             "extends": ["react-app", "react-app/jest"]
@@ -57,8 +59,20 @@
             "@crestron/ch5-utilities-cli": "^0.1.52",
             "@types/ncp": "^2.0.5",
             "@types/rimraf": "^3.0.2",
+            "@typescript-eslint/eslint-plugin": "^5.14.0",
+            "@typescript-eslint/parser": "^5.14.0",
+            "eslint": "^8.11.0",
+            "eslint-config-airbnb": "^19.0.4",
+            "eslint-config-airbnb-typescript": "^16.1.2",
+            "eslint-config-prettier": "^8.5.0",
+            "eslint-plugin-import": "^2.25.4",
+            "eslint-plugin-jsx-a11y": "^6.5.1",
+            "eslint-plugin-prettier": "^4.0.0",
+            "eslint-plugin-react": "^7.29.3",
+            "eslint-plugin-react-hooks": "^4.3.0",
             "ncp": "^2.0.0",
             "node-jq": "^2.1.0",
+            "prettier": "^2.5.1",
             "rimraf": "^3.0.2",
             "sponge": "^0.1.0"
         }
