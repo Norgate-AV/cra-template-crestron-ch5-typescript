@@ -26,6 +26,9 @@ jobs:
         
     - name: Install dependancies
       run: yarn
+
+    - name: Build
+      run: yarn build  
       
     - name: Run tests
       run: yarn test
@@ -47,6 +50,9 @@ jobs:
         
     - name: Install dependancies
       run: yarn
+    
+    - name: Build
+      run: yarn build
       
     - name: Release
       env: 
