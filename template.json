@@ -31,6 +31,24 @@
         "eslintConfig": {
             "extends": ["react-app", "react-app/jest"]
         },
+        "crestron": {
+            "project": {
+                "touchscreen": {
+                    "url": ""
+                }
+            },
+            "crcomlib": {
+                "root": "./node_modules/@crestron/ch5-crcomlib",
+                "packageJson": "./node_modules/@crestron/ch5-crcomlib/package.json",
+                "bundle": {
+                    "name": "cr-com-lib.js",
+                    "path": {
+                        "umd": "./node_modules/@crestron/ch5-crcomlib/build_bundles/umd/cr-com-lib.js",
+                        "cjs": "./node_modules/@crestron/ch5-crcomlib/build_bundles/cjs/cr-com-lib.js"
+                    }
+                }
+            }
+        },
         "devDependencies": {
             "@crestron/ch5-utilities-cli": "^0.1.52",
             "@types/ncp": "^2.0.5",
