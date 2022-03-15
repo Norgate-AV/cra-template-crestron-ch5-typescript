@@ -25,7 +25,7 @@
             "clean:all": "yarn clean:build && yarn clean:dist",
             "copylib": "ncp $npm_package_crestron_crcomlib_bundle_path_umd public/$npm_package_crestron_crcomlib_bundle_name",
             "start": "yarn resolve:crcomlib && yarn copylib && react-scripts start",
-            "build": "yarn clean:build && yarn resolve:crcomlib &&  yarn copylib && react-scripts build",
+            "build": "yarn clean:build && yarn resolve:crcomlib && yarn copylib && react-scripts build",
             "serve": "serve -s build",
             "build-and-serve": "yarn build && yarn serve",
             "build:archive": "yarn clean:dist && yarn ch5-cli archive -p $npm_package_name -P samplesource=$npm_package_name -d build -o dist",
