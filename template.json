@@ -44,7 +44,12 @@
         "crestron": {
             "project": {
                 "touchscreen": {
-                    "url": ""
+                    "url": "Enter IP/Hostname of Crestron Touchpanel here...",
+                    "type": "touchscreen"
+                },
+                "web": {
+                    "url": "Enter IP/Hostname of Crestron Processor here...",
+                    "type": "web"
                 }
             },
             "crcomlib": {
