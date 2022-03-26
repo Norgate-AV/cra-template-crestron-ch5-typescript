@@ -4,11 +4,37 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Crestron CH5 Specific
 
-`yarn build` will compile the code in src to the build directory.
+`yarn build` will compile the code in src to the build directory.  
 `yarn build:archive` will build a ch5z file from the most recently built build and output to the dist folder.
-`yarn build:deploy` will deploy the ch5z from the dist folder to a touchpanel "panel".
 
-`yarn build:onestep` will execute the above three steps in sequence.
+`yarn build:deploy:touchscreen` will deploy the ch5z from the dist folder to a touchscreen.  
+`yarn build:onestep:touchscreen` will execute the build, archive and deploy steps in sequence.
+
+`yarn build:deploy:web` will deploy the ch5z from the dist folder to a control system.  
+`yarn build:onestep:web` will execute the build, archive and deploy steps in sequence.
+
+To learn more about Crestron CH5, check out the [Crestron CH5 documentation](https://sdkcon78221.crestron.com/sdk/Crestron_HTML5UI/Content/Topics/Home.htm).
+
+## Project Setup
+
+To upload to a Crestron touchscreen or control system, you must add the IP address or hostname to the project properties in `package.json`.
+
+```json
+{
+	"crestron": {
+		"project": {
+			"touchscreen": {
+				"url": "Enter IP/Hostname of Crestron Touchpanel here...",
+				"type": "touchscreen"
+			},
+			"web": {
+				"url": "Enter IP/Hostname of Crestron Processor here...",
+				"type": "web"
+			}
+		}
+	}
+}
+```
 
 ## Available Scripts
 

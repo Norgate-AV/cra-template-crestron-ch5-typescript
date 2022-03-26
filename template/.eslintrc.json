@@ -37,10 +37,18 @@
 				"avoidEscape": true
 			}
 		],
+		"import/no-extraneous-dependencies": [
+			"error",
+			{
+				"devDependencies": true
+			}
+		],
 		"react/jsx-uses-react": ["off"],
 		"react/react-in-jsx-scope": ["off"],
 		"react/jsx-props-no-spreading": ["warn"],
 		"react/jsx-one-expression-per-line": "off",
-		"no-shadow": "off"
+		"no-shadow": "off",
+		"@typescript-eslint/no-shadow": "off",
+		"no-console": "off"
 	}
 }
