@@ -15,6 +15,27 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 To learn more about Crestron CH5, check out the [Crestron CH5 documentation](https://sdkcon78221.crestron.com/sdk/Crestron_HTML5UI/Content/Topics/Home.htm).
 
+## Project Setup
+
+To upload to a Crestron touchscreen or control system, you must add the IP address or hostname to the project properties in `package.json`.
+
+```json
+{
+	"crestron": {
+		"project": {
+			"touchscreen": {
+				"url": "Enter IP/Hostname of Crestron Touchpanel here...",
+				"type": "touchscreen"
+			},
+			"web": {
+				"url": "Enter IP/Hostname of Crestron Processor here...",
+				"type": "web"
+			}
+		}
+	}
+}
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
