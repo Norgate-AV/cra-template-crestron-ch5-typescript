@@ -30,11 +30,13 @@
         "semantic-release": "semantic-release --branches master",
         "commit": "git-cz",
         "build": "echo \"Build is not configured for package \\\"$npm_package_name\\\", skipping.\"",
-        "test": "echo \"Unit testing is not configured for package \\\"$npm_package_name\\\", skipping.\""
+        "test": "echo \"Unit testing is not configured for package \\\"$npm_package_name\\\", skipping.\"",
+        "prepare": "husky install"
     },
     "devDependencies": {
         "cz-conventional-changelog": "3.3.0",
-        "semantic-release": "^19.0.2"
+        "semantic-release": "^19.0.2",
+        "husky": "^7.0.0"
     },
     "config": {
         "commitizen": {
