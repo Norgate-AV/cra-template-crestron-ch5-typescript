@@ -1,5 +1,10 @@
 # cra-template-crestron-ch5-typescript
 
+<div align="center">
+	<img src="./template/src/logo.svg" alt="react-logo" width="200" />
+	<img src="./template/src/assets/crestron-ch5-logo.png" alt="ch5-logo" width="200" />
+</div>
+
 This is an unofficial third party TypeScript template for [Create React App](https://github.com/facebook/create-react-app) and [Crestron CH5](https://www.npmjs.com/package/@crestron/ch5-crcomlib)
 
 The template is setup to work with Crestron CH5 out of the box so you can get up and running quickly. It also provides packages for page routing, styling using [CSS-in-JS](https://en.wikipedia.org/wiki/CSS-in-JS) (you can still use regular CSS or SCSS 😄), a wide variety of icons, mobile browser console, linting and more... 🚀 🚀 🚀
