@@ -26,3 +26,6 @@ yarn-error.log*
 # output files
 /dist
 public/cr-com-lib.js
+
+# local history folder
+/.history

@@ -11,6 +11,7 @@
 		"**/.git": true,
 		"**/.svn": true,
 		"**/.hg": true,
+		"**/.history": true,
 		"**/CVS": true,
 		"**/.DS_Store": true,
 		"**/*.js.map": true,
