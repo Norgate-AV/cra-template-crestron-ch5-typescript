@@ -18,9 +18,9 @@ yarn create react-app my-app --template @norgate-av/crestron-ch5-typescript
 
 ## What does this template provide?
 
--   Crestron CH5 CrComLib
--   Crestron CH5 WebXPanel
--   Crestron CH5 CLI
+-   [Crestron CH5 CrComLib](https://www.npmjs.com/package/@crestron/ch5-crcomlib)
+-   [Crestron CH5 WebXPanel](https://www.npmjs.com/package/@crestron/ch5-webxpanel)
+-   [Crestron CH5 CLI](https://www.npmjs.com/package/@crestron/ch5-utilities-cli)
 -   [Typescript](https://www.typescriptlang.org/)
 -   [React Router](https://reactrouterdotcom.fly.dev/)
 -   [Styled Components](https://styled-components.com/)
