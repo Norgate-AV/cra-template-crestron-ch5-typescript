@@ -29,6 +29,14 @@ function App() {
 				>
 					Learn React
 				</a>
+				<a
+					className="App-link"
+					href="https://sdkcon78221.crestron.com/sdk/Crestron_HTML5UI/Content/Topics/Home.htm"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					Learn Crestron CH5
+				</a>
 			</header>
 		</div>
 	);
