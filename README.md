@@ -36,6 +36,7 @@ yarn create react-app my-app --template @norgate-av/crestron-ch5-typescript
 -   [Husky](https://typicode.github.io/husky/#/)
 -   [Lint-Staged](https://github.com/okonet/lint-staged)
 -   [Commitizen](https://commitizen-tools.github.io/commitizen/)
+-   [commitlint](https://commitlint.js.org/#/)
 -   [VSCode Workspace Config](https://code.visualstudio.com/docs/getstarted/settings#_workspace-settings)
 -   [EditorConfig](https://editorconfig.org/)
 
