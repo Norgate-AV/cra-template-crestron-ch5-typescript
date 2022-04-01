@@ -12,6 +12,7 @@
 			"@types/react-dom": "^17.0.13",
 			"@types/react-router-dom": "^5.3.3",
 			"@types/styled-components": "^5.1.24",
+			"axios": "^0.26.1",
 			"eruda": "^2.4.1",
 			"react-icons": "^4.3.1",
 			"react-router-dom": "^6.2.2",
