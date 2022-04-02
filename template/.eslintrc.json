@@ -43,6 +43,13 @@
 				"devDependencies": true
 			}
 		],
+		"no-param-reassign": [
+			"error",
+			{
+				"props": true,
+				"ignorePropertyModificationsFor": ["state"]
+			}
+		],
 		"react/jsx-uses-react": ["off"],
 		"react/react-in-jsx-scope": ["off"],
 		"react/jsx-props-no-spreading": ["warn"],
