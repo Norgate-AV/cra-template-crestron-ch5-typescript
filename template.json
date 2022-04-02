@@ -40,7 +40,8 @@
 			"lint": "eslint .",
 			"lint:fix": "eslint --fix .",
 			"commit": "git-cz",
-			"prepare": "husky install"
+			"prepare": "husky install",
+			"pretty:fix": "prettier --write ."
 		},
 		"eslintConfig": {
 			"extends": ["react-app", "react-app/jest"]
