@@ -31,6 +31,7 @@ yarn create react-app my-app --template @norgate-av/crestron-ch5-typescript
 -   [Styled Components](https://styled-components.com/)
 -   [React Icons](https://react-icons.github.io/react-icons/)
 -   [Eruda](https://eruda.liriliri.io/)
+-   [Axios](https://axios-http.com/)
 -   [ESLint](https://eslint.org/)
 -   [Prettier](https://prettier.io/)
 -   [Husky](https://typicode.github.io/husky/#/)
