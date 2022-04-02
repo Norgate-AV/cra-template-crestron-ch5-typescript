@@ -98,7 +98,8 @@
 			"sponge": "^0.1.0"
 		},
 		"lint-staged": {
-			"*.{js,jsx,ts,tsx}": ["yarn lint:fix"]
+			"*.{js,jsx,ts,tsx}": ["yarn lint:fix", "yarn pretty:fix"],
+			"*.{css,scss,md,html,json}": ["yarn pretty:fix"]
 		},
 		"config": {
 			"commitizen": {
