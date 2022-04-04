@@ -33,6 +33,7 @@ yarn create react-app my-app --template @norgate-av/crestron-ch5-typescript
 -   [Redux Toolkit](https://redux-toolkit.js.org/)
 -   [Styled Components](https://styled-components.com/)
 -   [React Icons](https://react-icons.github.io/react-icons/)
+-   [Rooks](https://react-hooks.org/)
 -   [Eruda](https://eruda.liriliri.io/)
 -   [Axios](https://axios-http.com/)
 -   [ESLint](https://eslint.org/)
