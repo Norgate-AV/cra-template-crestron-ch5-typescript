@@ -44,7 +44,7 @@
 			"lint": "eslint .",
 			"lint:fix": "eslint --fix .",
 			"commit": "git-cz",
-			"prepare": "husky install",
+			"husky:install": "husky install",
 			"pretty:fix": "prettier --write ."
 		},
 		"eslintConfig": {
@@ -59,11 +59,11 @@
 				"web": {
 					"url": "Enter IP/Hostname of Crestron Processor here...",
 					"type": "web",
-                    "connection": {
-                        "url": "127.0.0.1",
-                        "ipId": "0x03",
-                        "secure": false
-                    }
+					"connection": {
+						"url": "127.0.0.1",
+						"ipId": "0x03",
+						"secure": false
+					}
 				}
 			},
 			"crcomlib": {
