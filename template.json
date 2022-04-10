@@ -79,7 +79,7 @@
 			"@types/ncp": "^2.0.5",
 			"@types/node": "^16.11.26",
 			"@types/node-sass": "^4.11.2",
-			"@types/react": "^17.0.40",
+			"@types/react": "^18.0.1",
 			"@types/react-dom": "^17.0.13",
 			"@types/react-router-dom": "^5.3.3",
 			"@types/redux-logger": "^3.0.9",
