@@ -54,6 +54,7 @@
         "react/react-in-jsx-scope": ["off"],
         "react/jsx-props-no-spreading": ["warn"],
         "react/jsx-one-expression-per-line": "off",
+        "react/function-component-definition": "off",
         "no-shadow": "off",
         "@typescript-eslint/no-shadow": "off",
         "no-console": "off"
