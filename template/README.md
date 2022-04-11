@@ -29,7 +29,12 @@ To upload to a Crestron touchscreen or control system, you must add the IP addre
             },
             "web": {
                 "url": "Enter IP/Hostname of Crestron Processor here...",
-                "type": "web"
+                "type": "web",
+                "config": {
+                    "host": "localhost",
+                    "ipId": "0x03",
+                    "roomId": ""
+                }
             }
         }
     }
