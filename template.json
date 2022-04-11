@@ -1,119 +1,119 @@
 {
-	"package": {
-		"dependencies": {
-			"@crestron/ch5-crcomlib": "^1.2.0",
-			"@crestron/ch5-webxpanel": "^1.2.5",
-			"@norgate-av/crestron-ch5-helper": "^1.0.1",
-			"@reduxjs/toolkit": "^1.8.1",
-			"axios": "^0.26.1",
-			"eruda": "^2.4.1",
-			"react-icons": "^4.3.1",
-			"react-redux": "^7.2.7",
-			"react-router-dom": "^6.2.2",
-			"redux": "^4.1.2",
-			"redux-logger": "^3.0.6",
-			"rooks": "^5.11.0",
-			"styled-components": "^5.3.3",
-			"typescript": "^4.6.2"
-		},
-		"scripts": {
-			"clean:build": "rimraf build",
-			"clean:dist": "rimraf dist",
-			"clean:all": "yarn clean:build && yarn clean:dist",
-			"copylib": "ncp $npm_package_crestron_crcomlib_bundle_path_umd public/$npm_package_crestron_crcomlib_bundle_name",
-			"start": "yarn resolve:crcomlib && yarn copylib && react-scripts start",
-			"build": "yarn clean:build && yarn resolve:crcomlib && yarn copylib && react-scripts build",
-			"serve": "serve -s build",
-			"build-and-serve": "yarn build && yarn serve",
-			"build:archive": "yarn clean:dist && yarn ch5-cli archive -p $npm_package_name -P samplesource=$npm_package_name -d build -o dist",
-			"build:deploy:touchscreen": "yarn ch5-cli deploy -p -H $npm_package_crestron_project_touchscreen_url -t $npm_package_crestron_project_touchscreen_type dist/$npm_package_name.ch5z",
-			"build:deploy:web": "yarn ch5-cli deploy -p -H $npm_package_crestron_project_web_url -t $npm_package_crestron_project_web_type dist/$npm_package_name.ch5z",
-			"build:onestep:touchscreen": "yarn build && yarn build:archive && yarn build:deploy:touchscreen",
-			"build:onestep:web": "yarn build && yarn build:archive && yarn build:deploy:web",
-			"resolve:crcomlib": "jq '.main = \"build_bundles/cjs/cr-com-lib.js\"' $npm_package_crestron_crcomlib_packageJson | sponge $npm_package_crestron_crcomlib_packageJson",
-			"lint": "eslint .",
-			"lint:fix": "eslint --fix .",
-			"commit": "git-cz",
-			"husky:install": "husky install",
-			"pretty:fix": "prettier --write ."
-		},
-		"eslintConfig": {
-			"extends": ["react-app", "react-app/jest"]
-		},
-		"crestron": {
-			"project": {
-				"touchscreen": {
-					"url": "Enter IP/Hostname of Crestron Touchpanel here...",
-					"type": "touchscreen"
-				},
-				"web": {
-					"url": "Enter IP/Hostname of Crestron Processor here...",
-					"type": "web",
-					"connection": {
-						"url": "127.0.0.1",
-						"ipId": "0x03",
-						"secure": false
-					}
-				}
-			},
-			"crcomlib": {
-				"root": "./node_modules/@crestron/ch5-crcomlib",
-				"packageJson": "./node_modules/@crestron/ch5-crcomlib/package.json",
-				"bundle": {
-					"name": "cr-com-lib.js",
-					"path": {
-						"umd": "./node_modules/@crestron/ch5-crcomlib/build_bundles/umd/cr-com-lib.js",
-						"cjs": "./node_modules/@crestron/ch5-crcomlib/build_bundles/cjs/cr-com-lib.js"
-					}
-				}
-			}
-		},
-		"devDependencies": {
-			"@commitlint/cli": "^16.2.3",
-			"@commitlint/config-conventional": "^16.2.1",
-			"@crestron/ch5-utilities-cli": "^0.1.52",
-			"@testing-library/jest-dom": "^5.16.2",
-			"@testing-library/react": "^12.1.4",
-			"@testing-library/user-event": "^13.5.0",
-			"@types/jest": "^27.4.1",
-			"@types/ncp": "^2.0.5",
-			"@types/node": "^16.11.26",
-			"@types/node-sass": "^4.11.2",
-			"@types/react": "^18.0.1",
-			"@types/react-dom": "^18.0.0",
-			"@types/react-router-dom": "^5.3.3",
-			"@types/redux-logger": "^3.0.9",
-			"@types/rimraf": "^3.0.2",
-			"@types/styled-components": "^5.1.24",
-			"@typescript-eslint/eslint-plugin": "^5.14.0",
-			"@typescript-eslint/parser": "^5.14.0",
-			"cz-conventional-changelog": "3.3.0",
-			"eslint": "^8.11.0",
-			"eslint-config-airbnb": "^19.0.4",
-			"eslint-config-airbnb-typescript": "^16.1.2",
-			"eslint-config-prettier": "^8.5.0",
-			"eslint-plugin-import": "^2.25.4",
-			"eslint-plugin-jsx-a11y": "^6.5.1",
-			"eslint-plugin-prettier": "^4.0.0",
-			"eslint-plugin-react": "^7.29.3",
-			"eslint-plugin-react-hooks": "^4.3.0",
-			"husky": "^7.0.0",
-			"lint-staged": "^12.3.5",
-			"ncp": "^2.0.0",
-			"node-jq": "^2.1.0",
-			"node-sass": "^7.0.1",
-			"prettier": "^2.5.1",
-			"rimraf": "^3.0.2",
-			"sponge": "^0.1.0"
-		},
-		"lint-staged": {
-			"*.{js,jsx,ts,tsx}": ["yarn lint:fix", "yarn pretty:fix"],
-			"*.{css,scss,md,html,json,yml,yaml}": ["yarn pretty:fix"]
-		},
-		"config": {
-			"commitizen": {
-				"path": "./node_modules/cz-conventional-changelog"
-			}
-		}
-	}
+    "package": {
+        "dependencies": {
+            "@crestron/ch5-crcomlib": "^1.2.0",
+            "@crestron/ch5-webxpanel": "^1.2.5",
+            "@norgate-av/crestron-ch5-helper": "^1.0.1",
+            "@reduxjs/toolkit": "^1.8.1",
+            "axios": "^0.26.1",
+            "eruda": "^2.4.1",
+            "react-icons": "^4.3.1",
+            "react-redux": "^7.2.7",
+            "react-router-dom": "^6.2.2",
+            "redux": "^4.1.2",
+            "redux-logger": "^3.0.6",
+            "rooks": "^5.11.0",
+            "styled-components": "^5.3.3",
+            "typescript": "^4.6.2"
+        },
+        "scripts": {
+            "clean:build": "rimraf build",
+            "clean:dist": "rimraf dist",
+            "clean:all": "yarn clean:build && yarn clean:dist",
+            "copylib": "ncp $npm_package_crestron_crcomlib_bundle_path_umd public/$npm_package_crestron_crcomlib_bundle_name",
+            "start": "yarn resolve:crcomlib && yarn copylib && react-scripts start",
+            "build": "yarn clean:build && yarn resolve:crcomlib && yarn copylib && react-scripts build",
+            "serve": "serve -s build",
+            "build-and-serve": "yarn build && yarn serve",
+            "build:archive": "yarn clean:dist && yarn ch5-cli archive -p $npm_package_name -P samplesource=$npm_package_name -d build -o dist",
+            "build:deploy:touchscreen": "yarn ch5-cli deploy -p -H $npm_package_crestron_project_touchscreen_url -t $npm_package_crestron_project_touchscreen_type dist/$npm_package_name.ch5z",
+            "build:deploy:web": "yarn ch5-cli deploy -p -H $npm_package_crestron_project_web_url -t $npm_package_crestron_project_web_type dist/$npm_package_name.ch5z",
+            "build:onestep:touchscreen": "yarn build && yarn build:archive && yarn build:deploy:touchscreen",
+            "build:onestep:web": "yarn build && yarn build:archive && yarn build:deploy:web",
+            "resolve:crcomlib": "jq '.main = \"build_bundles/cjs/cr-com-lib.js\"' $npm_package_crestron_crcomlib_packageJson | sponge $npm_package_crestron_crcomlib_packageJson",
+            "lint": "eslint .",
+            "lint:fix": "eslint --fix .",
+            "commit": "git-cz",
+            "husky:install": "husky install",
+            "pretty:fix": "prettier --write ."
+        },
+        "eslintConfig": {
+            "extends": ["react-app", "react-app/jest"]
+        },
+        "crestron": {
+            "project": {
+                "touchscreen": {
+                    "url": "Enter IP/Hostname of Crestron Touchpanel here...",
+                    "type": "touchscreen"
+                },
+                "web": {
+                    "url": "Enter IP/Hostname of Crestron Processor here...",
+                    "type": "web",
+                    "connection": {
+                        "url": "127.0.0.1",
+                        "ipId": "0x03",
+                        "secure": false
+                    }
+                }
+            },
+            "crcomlib": {
+                "root": "./node_modules/@crestron/ch5-crcomlib",
+                "packageJson": "./node_modules/@crestron/ch5-crcomlib/package.json",
+                "bundle": {
+                    "name": "cr-com-lib.js",
+                    "path": {
+                        "umd": "./node_modules/@crestron/ch5-crcomlib/build_bundles/umd/cr-com-lib.js",
+                        "cjs": "./node_modules/@crestron/ch5-crcomlib/build_bundles/cjs/cr-com-lib.js"
+                    }
+                }
+            }
+        },
+        "devDependencies": {
+            "@commitlint/cli": "^16.2.3",
+            "@commitlint/config-conventional": "^16.2.1",
+            "@crestron/ch5-utilities-cli": "^0.1.52",
+            "@testing-library/jest-dom": "^5.16.2",
+            "@testing-library/react": "^12.1.4",
+            "@testing-library/user-event": "^13.5.0",
+            "@types/jest": "^27.4.1",
+            "@types/ncp": "^2.0.5",
+            "@types/node": "^16.11.26",
+            "@types/node-sass": "^4.11.2",
+            "@types/react": "^18.0.1",
+            "@types/react-dom": "^18.0.0",
+            "@types/react-router-dom": "^5.3.3",
+            "@types/redux-logger": "^3.0.9",
+            "@types/rimraf": "^3.0.2",
+            "@types/styled-components": "^5.1.24",
+            "@typescript-eslint/eslint-plugin": "^5.14.0",
+            "@typescript-eslint/parser": "^5.14.0",
+            "cz-conventional-changelog": "3.3.0",
+            "eslint": "^8.11.0",
+            "eslint-config-airbnb": "^19.0.4",
+            "eslint-config-airbnb-typescript": "^16.1.2",
+            "eslint-config-prettier": "^8.5.0",
+            "eslint-plugin-import": "^2.25.4",
+            "eslint-plugin-jsx-a11y": "^6.5.1",
+            "eslint-plugin-prettier": "^4.0.0",
+            "eslint-plugin-react": "^7.29.3",
+            "eslint-plugin-react-hooks": "^4.3.0",
+            "husky": "^7.0.0",
+            "lint-staged": "^12.3.5",
+            "ncp": "^2.0.0",
+            "node-jq": "^2.1.0",
+            "node-sass": "^7.0.1",
+            "prettier": "^2.5.1",
+            "rimraf": "^3.0.2",
+            "sponge": "^0.1.0"
+        },
+        "lint-staged": {
+            "*.{js,jsx,ts,tsx}": ["yarn lint:fix", "yarn pretty:fix"],
+            "*.{css,scss,md,html,json,yml,yaml}": ["yarn pretty:fix"]
+        },
+        "config": {
+            "commitizen": {
+                "path": "./node_modules/cz-conventional-changelog"
+            }
+        }
+    }
 }

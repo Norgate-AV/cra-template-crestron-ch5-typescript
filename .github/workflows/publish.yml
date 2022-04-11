@@ -2,7 +2,7 @@ name: Publish
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   quality:
@@ -14,22 +14,22 @@ jobs:
         os: [ubuntu-latest, macOS-latest, windows-latest]
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-      
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
-        
-    - name: Install dependencies
-      run: yarn
+      - name: Checkout
+        uses: actions/checkout@v2
 
-    - name: Build
-      run: yarn build  
-      
-    - name: Run tests
-      run: yarn test
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Build
+        run: yarn build
+
+      - name: Run tests
+        run: yarn test
 
   publish:
     runs-on: ubuntu-latest
@@ -37,24 +37,23 @@ jobs:
 
     needs: [quality]
 
-    steps: 
-    - name: Checkout
-      uses: actions/checkout@v2
-      
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
-        
-    - name: Install dependencies
-      run: yarn
-    
-    - name: Build
-      run: yarn build
-      
-    - name: Release
-      run: yarn semantic-release
-      env: 
-        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Build
+        run: yarn build
+
+      - name: Release
+        run: yarn semantic-release
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

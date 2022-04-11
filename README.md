@@ -52,23 +52,23 @@ To upload to a Crestron touchscreen or control system, you must add the IP addre
 
 ```json
 {
-	"crestron": {
-		"project": {
-			"touchscreen": {
-				"url": "Enter IP/Hostname of Crestron Touchpanel here...",
-				"type": "touchscreen"
-			},
-			"web": {
-				"url": "Enter IP/Hostname of Crestron Processor here...",
-				"type": "web",
-				"connection": {
-					"url": "127.0.0.1",
-					"ipId": "0x03",
-					"secure": false
-				}
-			}
-		}
-	}
+    "crestron": {
+        "project": {
+            "touchscreen": {
+                "url": "Enter IP/Hostname of Crestron Touchpanel here...",
+                "type": "touchscreen"
+            },
+            "web": {
+                "url": "Enter IP/Hostname of Crestron Processor here...",
+                "type": "web",
+                "connection": {
+                    "url": "127.0.0.1",
+                    "ipId": "0x03",
+                    "secure": false
+                }
+            }
+        }
+    }
 }
 ```
 
