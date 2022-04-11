@@ -31,7 +31,8 @@
         "commit": "git-cz",
         "build": "echo \"Build is not configured for package \\\"$npm_package_name\\\", skipping.\"",
         "test": "echo \"Unit testing is not configured for package \\\"$npm_package_name\\\", skipping.\"",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "pretty:fix": "prettier --write ."
     },
     "devDependencies": {
         "@commitlint/cli": "^16.2.3",
