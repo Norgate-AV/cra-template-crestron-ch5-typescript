@@ -1,20 +1,20 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import type { RootState } from "../../store";
 
-export interface IControlSystemConnection {
+interface IControlSystem {
     online: boolean;
 }
 
-const initialState: IControlSystemConnection = {
+const initialState: IControlSystem = {
     online: false,
 };
 
-export const controlSystemConnectionSlice = createSlice({
-    name: "controlSystemConnection",
+export const controlSystemSlice = createSlice({
+    name: "controlSystem",
     initialState,
     reducers: {
         setControlSystemOnline: (
-            state: IControlSystemConnection,
+            state: IControlSystem,
             action: PayloadAction<boolean>,
         ) => {
             state.online = action.payload;
@@ -25,11 +25,10 @@ export const controlSystemConnectionSlice = createSlice({
     },
 });
 
-export const { setControlSystemOnline } = controlSystemConnectionSlice.actions;
+export const { setControlSystemOnline } = controlSystemSlice.actions;
 
-export const selectControlSystemConnection = (state: RootState) =>
-    state.controlSystemConnection;
+export const selectControlSystem = (state: RootState) => state.controlSystem;
 export const selectControlSystemOnline = (state: RootState) =>
-    state.controlSystemConnection.online;
+    state.controlSystem.online;
 
-export default controlSystemConnectionSlice.reducer;
+export default controlSystemSlice.reducer;
