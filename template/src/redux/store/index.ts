@@ -1,13 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import logger from "redux-logger";
-import controlSystemConnectionReducer, {
-    setControlSystemOnline,
-} from "../state/controlSystemConnection";
-import crestron from "../plugins/crestron";
+import { applyReduxPlugins } from "../plugins";
+import controlSystemReducer from "../state/controlSystem";
+import webXpanelReducer from "../state/webXPanel";
 
 const store = configureStore({
     reducer: {
-        controlSystemConnection: controlSystemConnectionReducer,
+        controlSystem: controlSystemReducer,
+        webXPanel: webXpanelReducer,
     },
     middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
     devTools: process.env.NODE_ENV !== "production",
@@ -16,6 +16,4 @@ const store = configureStore({
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
 
-export default crestron(store, {
-    actions: { setControlSystemOnline },
-});
+export default applyReduxPlugins(store);
