@@ -9,6 +9,18 @@ This is an unofficial third party TypeScript template for [Create React App](htt
 
 The template is setup to work with Crestron CH5 out of the box so you can get up and running quickly. It also provides packages for page routing, styling using [CSS-in-JS](https://en.wikipedia.org/wiki/CSS-in-JS) (you can still use regular CSS or SCSS 😄), a wide variety of icons, mobile browser console, linting and more... 🚀 🚀 🚀
 
+**NOTE**
+
+To use the Husky Git Hooks feature provided by this template you must manually run the following command within the project directory after the bootstrap completes.
+
+```sh
+npm run husky:install
+
+# or
+
+yarn husky:install
+```
+
 To use this template, add `--template @norgate-av/crestron-ch5-typescript` when creating a new app.
 
 For example:
@@ -26,16 +38,23 @@ yarn create react-app my-app --template @norgate-av/crestron-ch5-typescript
 -   [Crestron CH5 CrComLib](https://www.npmjs.com/package/@crestron/ch5-crcomlib)
 -   [Crestron CH5 WebXPanel](https://www.npmjs.com/package/@crestron/ch5-webxpanel)
 -   [Crestron CH5 CLI](https://www.npmjs.com/package/@crestron/ch5-utilities-cli)
+-   [Crestron CH5 Helper](https://www.npmjs.com/package/@norgate-av/crestron-ch5-helper)
 -   [Typescript](https://www.typescriptlang.org/)
 -   [React Router](https://reactrouterdotcom.fly.dev/)
+-   [Redux](https://redux.js.org/)
+-   [React Redux](https://react-redux.js.org/)
+-   [Redux Toolkit](https://redux-toolkit.js.org/)
 -   [Styled Components](https://styled-components.com/)
 -   [React Icons](https://react-icons.github.io/react-icons/)
+-   [Rooks](https://react-hooks.org/)
 -   [Eruda](https://eruda.liriliri.io/)
+-   [Axios](https://axios-http.com/)
 -   [ESLint](https://eslint.org/)
 -   [Prettier](https://prettier.io/)
 -   [Husky](https://typicode.github.io/husky/#/)
 -   [Lint-Staged](https://github.com/okonet/lint-staged)
 -   [Commitizen](https://commitizen-tools.github.io/commitizen/)
+-   [commitlint](https://commitlint.js.org/#/)
 -   [VSCode Workspace Config](https://code.visualstudio.com/docs/getstarted/settings#_workspace-settings)
 -   [EditorConfig](https://editorconfig.org/)
 
@@ -45,18 +64,23 @@ To upload to a Crestron touchscreen or control system, you must add the IP addre
 
 ```json
 {
-	"crestron": {
-		"project": {
-			"touchscreen": {
-				"url": "Enter IP/Hostname of Crestron Touchpanel here...",
-				"type": "touchscreen"
-			},
-			"web": {
-				"url": "Enter IP/Hostname of Crestron Processor here...",
-				"type": "web"
-			}
-		}
-	}
+    "crestron": {
+        "project": {
+            "touchscreen": {
+                "url": "Enter IP/Hostname of Crestron Touchpanel here...",
+                "type": "touchscreen"
+            },
+            "web": {
+                "url": "Enter IP/Hostname of Crestron Processor here...",
+                "type": "web",
+                "config": {
+                    "host": "localhost",
+                    "ipId": "0x03",
+                    "roomId": ""
+                }
+            }
+        }
+    }
 }
 ```
 

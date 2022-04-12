@@ -2,6 +2,18 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+**NOTE**
+
+To use the Husky Git Hooks feature provided by this template you must manually run the following command within the project directory after the bootstrap completes.
+
+```sh
+npm run husky:install
+
+# or
+
+yarn husky:install
+```
+
 ## Crestron CH5 Specific
 
 `yarn build` will compile the code in src to the build directory.  
@@ -15,24 +27,54 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 To learn more about Crestron CH5, check out the [Crestron CH5 documentation](https://sdkcon78221.crestron.com/sdk/Crestron_HTML5UI/Content/Topics/Home.htm).
 
+## What does this template provide?
+
+-   [Crestron CH5 CrComLib](https://www.npmjs.com/package/@crestron/ch5-crcomlib)
+-   [Crestron CH5 WebXPanel](https://www.npmjs.com/package/@crestron/ch5-webxpanel)
+-   [Crestron CH5 CLI](https://www.npmjs.com/package/@crestron/ch5-utilities-cli)
+-   [Crestron CH5 Helper](https://www.npmjs.com/package/@norgate-av/crestron-ch5-helper)
+-   [Typescript](https://www.typescriptlang.org/)
+-   [React Router](https://reactrouterdotcom.fly.dev/)
+-   [Redux](https://redux.js.org/)
+-   [React Redux](https://react-redux.js.org/)
+-   [Redux Toolkit](https://redux-toolkit.js.org/)
+-   [Styled Components](https://styled-components.com/)
+-   [React Icons](https://react-icons.github.io/react-icons/)
+-   [Rooks](https://react-hooks.org/)
+-   [Eruda](https://eruda.liriliri.io/)
+-   [Axios](https://axios-http.com/)
+-   [ESLint](https://eslint.org/)
+-   [Prettier](https://prettier.io/)
+-   [Husky](https://typicode.github.io/husky/#/)
+-   [Lint-Staged](https://github.com/okonet/lint-staged)
+-   [Commitizen](https://commitizen-tools.github.io/commitizen/)
+-   [commitlint](https://commitlint.js.org/#/)
+-   [VSCode Workspace Config](https://code.visualstudio.com/docs/getstarted/settings#_workspace-settings)
+-   [EditorConfig](https://editorconfig.org/)
+
 ## Project Setup
 
 To upload to a Crestron touchscreen or control system, you must add the IP address or hostname to the project properties in `package.json`.
 
 ```json
 {
-	"crestron": {
-		"project": {
-			"touchscreen": {
-				"url": "Enter IP/Hostname of Crestron Touchpanel here...",
-				"type": "touchscreen"
-			},
-			"web": {
-				"url": "Enter IP/Hostname of Crestron Processor here...",
-				"type": "web"
-			}
-		}
-	}
+    "crestron": {
+        "project": {
+            "touchscreen": {
+                "url": "Enter IP/Hostname of Crestron Touchpanel here...",
+                "type": "touchscreen"
+            },
+            "web": {
+                "url": "Enter IP/Hostname of Crestron Processor here...",
+                "type": "web",
+                "config": {
+                    "host": "localhost",
+                    "ipId": "0x03",
+                    "roomId": ""
+                }
+            }
+        }
+    }
 }
 ```
 
@@ -78,3 +120,5 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+To learn Crestron CH5, check out the [Crestron CH5 documentation](https://sdkcon78221.crestron.com/sdk/Crestron_HTML5UI/Content/Topics/Home.htm).

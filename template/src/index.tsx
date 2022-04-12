@@ -1,32 +1,18 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import { HashRouter as Router } from "react-router-dom";
 import "./index.css";
-import {
-	bridgeReceiveIntegerFromNative,
-	bridgeReceiveBooleanFromNative,
-	bridgeReceiveStringFromNative,
-	bridgeReceiveObjectFromNative,
-	isCrestronTouchscreen,
-} from "@crestron/ch5-crcomlib";
+import { Provider } from "react-redux";
 import App from "./App";
+import store from "./redux/store";
 
-if (isCrestronTouchscreen()) {
-	(window as any).bridgeReceiveIntegerFromNative =
-		bridgeReceiveIntegerFromNative;
-	(window as any).bridgeReceiveBooleanFromNative =
-		bridgeReceiveBooleanFromNative;
-	(window as any).bridgeReceiveStringFromNative =
-		bridgeReceiveStringFromNative;
-	(window as any).bridgeReceiveObjectFromNative =
-		bridgeReceiveObjectFromNative;
-}
-
-ReactDOM.render(
-	<React.StrictMode>
-		<Router>
-			<App />
-		</Router>
-	</React.StrictMode>,
-	document.getElementById("root"),
+const root = document.getElementById("root") as HTMLElement;
+ReactDOM.createRoot(root).render(
+    <React.StrictMode>
+        <Provider store={store}>
+            <Router>
+                <App />
+            </Router>
+        </Provider>
+    </React.StrictMode>,
 );
