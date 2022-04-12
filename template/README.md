@@ -2,6 +2,18 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+**NOTE**
+
+To use the Husky Git Hooks feature provided by this template you must manually run the following command within the project directory after the bootstrap completes.
+
+```sh
+npm run husky:install
+
+# or
+
+yarn husky:install
+```
+
 ## Crestron CH5 Specific
 
 `yarn build` will compile the code in src to the build directory.  
