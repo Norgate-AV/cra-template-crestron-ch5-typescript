@@ -36,7 +36,7 @@ export const webXPanelSlice = createSlice({
             action: PayloadAction<Partial<WebXPanelConfigParams>>,
         ) => {
             state.config = action.payload;
-            console.log(`WebXPanel Config: ${state.config}`);
+            console.log("WebXPanel Config: ", state.config);
         },
         setWebXPanelVersion: (
             state: IWebXPanel,
