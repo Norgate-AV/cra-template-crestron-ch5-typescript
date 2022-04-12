@@ -10,7 +10,7 @@ import {
     setWebXPanelBuildDate,
     setWebXPanelIsActive,
     setWebXPanelWsConnected,
-} from "../state/webXpanel";
+} from "../state/webXPanel";
 
 export const applyReduxPlugins = (store: Store) => {
     controlSystem(store, {

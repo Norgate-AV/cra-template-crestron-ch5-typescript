@@ -2,12 +2,12 @@ import { configureStore } from "@reduxjs/toolkit";
 import logger from "redux-logger";
 import { applyReduxPlugins } from "../plugins";
 import controlSystemReducer from "../state/controlSystem";
-import webXpanelReducer from "../state/webXPanel";
+import webXPanelReducer from "../state/webXPanel";
 
 const store = configureStore({
     reducer: {
         controlSystem: controlSystemReducer,
-        webXPanel: webXpanelReducer,
+        webXPanel: webXPanelReducer,
     },
     middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
     devTools: process.env.NODE_ENV !== "production",
