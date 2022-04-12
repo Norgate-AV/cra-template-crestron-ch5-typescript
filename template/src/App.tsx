@@ -3,7 +3,7 @@ import reactLogo from "./logo.svg";
 import ch5Logo from "./assets/crestron-ch5-logo.png";
 import "./App.css";
 import { useAppSelector } from "./redux/hooks";
-import { selectControlSystemOnline } from "./redux/state/controlSystemConnection";
+import { selectControlSystemOnline } from "./redux/state/controlSystem";
 
 function App() {
     const controlSystemOnline = useAppSelector(selectControlSystemOnline);
