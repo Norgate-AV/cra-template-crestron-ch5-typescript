@@ -41,6 +41,7 @@
             "resolve:crcomlib": "run-script-os",
             "resolve:crcomlib:default": "./node_modules/node-jq/bin/jq '.main=\"build_bundles/cjs/cr-com-lib.js\"' $npm_package_crestron_crcomlib_packageJson | sponge $npm_package_crestron_crcomlib_packageJson",
             "resolve:crcomlib:windows": "./node_modules/node-jq/bin/jq \".main=\"\"build_bundles/cjs/cr-com-lib.js\"\"\" %npm_package_crestron_crcomlib_packageJson% | sponge %npm_package_crestron_crcomlib_packageJson%",
+            "build:docker": "yarn build && docker build . -t $npm_package_name",
             "lint": "eslint .",
             "lint:fix": "eslint --fix .",
             "commit": "git-cz",

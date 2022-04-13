@@ -1,18 +1,11 @@
 FROM nginx:stable-alpine
 
-WORKDIR /usr/share/react
+WORKDIR /usr/share/app
 
-RUN curl -fsSL https://deb.nodesource.com/setup_17.x | bash -
-RUN apt-get install -y nodejs
+RUN apk update && apk upgrade
 
-COPY package.json ./
-
-RUN yarn
-
-COPY . .
-
-RUN yarn build
+COPY build ./build
 
 RUN rm -r /usr/share/nginx/html/*
-
 RUN cp -a build/. /usr/share/nginx/html/
+

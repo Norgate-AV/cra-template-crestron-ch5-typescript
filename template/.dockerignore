@@ -1,3 +1,9 @@
-node_modules/
-build/
-dist/
+# This file is not needed in the current setup as the build
+# directory is copied into the image following a local build.
+# However, if you wanted to change that behavior and run the
+# build inside the image, it's likely you will need to
+# uncomment the below.
+
+# node_modules/
+# build/
+# dist/
