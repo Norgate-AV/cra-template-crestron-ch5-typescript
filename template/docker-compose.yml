@@ -2,9 +2,7 @@ version: "3"
 
 services:
   app:
-    # container_name: $project-name
-    # image: $project-name
     build: .
     restart: unless-stopped
     ports:
-      - 8080:80
+      - ${DOCKER_APP_PORT}:80
