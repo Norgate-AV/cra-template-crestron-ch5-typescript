@@ -57,6 +57,8 @@ yarn create react-app my-app --template @norgate-av/crestron-ch5-typescript
 -   [commitlint](https://commitlint.js.org/#/)
 -   [VSCode Workspace Config](https://code.visualstudio.com/docs/getstarted/settings#_workspace-settings)
 -   [EditorConfig](https://editorconfig.org/)
+-   [Docker Support](https://www.docker.com/)
+    -   **Requires** [Docker](https://docs.docker.com/get-docker/) and [Docker-Compose](https://docs.docker.com/compose/install/) to be installed on your local machine. [Portainer](https://www.portainer.io/) is also recommended as a front end for managing Docker containers. It is free and open-source.
 
 ## Project Setup
 
