@@ -4,6 +4,7 @@
             "@crestron/ch5-crcomlib": "^1.2.0",
             "@crestron/ch5-webxpanel": "^1.2.5",
             "@norgate-av/crestron-ch5-helper": "^1.1.0",
+            "@norgate-av/react-crestron-ch5-hooks": "^1.0.0",
             "@reduxjs/toolkit": "^1.8.1",
             "axios": "^0.26.1",
             "eruda": "^2.4.1",
