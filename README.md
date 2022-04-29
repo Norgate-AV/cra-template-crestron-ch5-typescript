@@ -20,6 +20,11 @@ This is an unofficial third party TypeScript template for [Create React App](htt
 
 The template is setup to work with Crestron CH5 out of the box so you can get up and running quickly. It also provides packages for page routing, styling using [CSS-in-JS](https://en.wikipedia.org/wiki/CSS-in-JS) (you can still use regular CSS or SCSS 😄), a wide variety of icons, mobile browser console, linting and more... 🚀 🚀 🚀
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 **NOTE**
 
 To use the Husky Git Hooks feature provided by this template you must manually run the following command within the project directory after the bootstrap completes.
