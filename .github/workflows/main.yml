@@ -1,11 +1,11 @@
-name: Publish
+name: CI
 
 on:
   push:
     branches: [master]
 
 jobs:
-  quality:
+  build:
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.ref == 'refs/heads/master' }}
 
-    needs: [quality]
+    needs: [build]
 
     steps:
       - name: Checkout
