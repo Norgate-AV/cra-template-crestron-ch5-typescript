@@ -1,6 +1,8 @@
 name: Template
 
 on:
+  push:
+    branches: [ci/add-template-test]
   workflow_dispatch:
 
 jobs:
