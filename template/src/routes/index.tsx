@@ -1,5 +1,6 @@
 import { createRoutes } from "react-router-dom";
+import type { RouteObject } from "react-router-dom";
 
-const routes = createRoutes({});
+const routes: RouteObject[] = [];
 
-export default routes;
+export default createRoutes(routes);
