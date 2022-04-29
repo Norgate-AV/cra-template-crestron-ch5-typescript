@@ -36,30 +36,17 @@ jobs:
 
       - name: Create Template (npx)
         run: |
-          npx create-react-app npx-test --template file:./
-          cd npx-test
           pwd
-          npm run test
-          npm run build
-          ls -la build/
-          tree build/
-          npm run build:archive
-          ls -la dist/
-          tree dist/
-          cd ..
+          cd
           pwd
 
-      - name: Create Template (yarn)
-        run: |
-          yarn create react-app yarn-test --template file:./
-          cd yarn-test
-          pwd
-          yarn test
-          yarn build
-          ls -la build/
-          tree build/
-          yarn build:archive
-          ls -la dist/
-          tree dist/
-          cd ..
-          pwd
+      # - name: Create Template (yarn)
+      #   run: |
+      #     yarn create react-app yarn-test --template file:./
+      #     cd yarn-test
+      #     pwd
+      #     yarn test
+      #     yarn build
+      #     yarn build:archive
+      #     cd ..
+      #     pwd
