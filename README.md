@@ -5,6 +5,17 @@
 	<img src="./template/src/assets/crestron-ch5-logo.png" alt="ch5-logo" width="200" />
 </div>
 
+---
+
+[![CI](https://github.com/Norgate-AV-Solutions-Ltd/cra-template-crestron-ch5-typescript/actions/workflows/main.yml/badge.svg?branch=develop)](https://github.com/Norgate-AV-Solutions-Ltd/cra-template-crestron-ch5-typescript/actions/workflows/main.yml)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![GitHub contributors](https://img.shields.io/github/contributors/Norgate-AV-Solutions-Ltd/cra-template-crestron-ch5-typescript)](#contributors)
+[![NPM](https://img.shields.io/npm/v/@norgate-av/cra-template-crestron-ch5-typescript.svg)](https://www.npmjs.com/package/@norgate-av/cra-template-crestron-ch5-typescript)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+---
+
 This is an unofficial third party TypeScript template for [Create React App](https://github.com/facebook/create-react-app) and [Crestron CH5](https://www.npmjs.com/package/@crestron/ch5-crcomlib)
 
 The template is setup to work with Crestron CH5 out of the box so you can get up and running quickly. It also provides packages for page routing, styling using [CSS-in-JS](https://en.wikipedia.org/wiki/CSS-in-JS) (you can still use regular CSS or SCSS 😄), a wide variety of icons, mobile browser console, linting and more... 🚀 🚀 🚀
