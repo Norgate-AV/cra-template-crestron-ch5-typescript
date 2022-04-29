@@ -23,33 +23,31 @@ The template is setup to work with Crestron CH5 out of the box so you can get up
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+## Contents 📖
+
+-   [Features :white_check_mark:](#features-white_check_mark)
+-   [What's in the Box? :package:](#whats-in-the-box-package)
+-   [Getting Started :rocket:](#getting-started-rocket)
+-   [Project Setup :zap:](#project-setup-zap)
+-   [Team :soccer:](#team-soccer)
+-   [Contributors :sparkles:](#contributors-sparkles)
+-   [LICENSE :balance_scale:](#license-balance_scale)
+
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-**NOTE**
+## Features :white_check_mark:
 
-To use the Husky Git Hooks feature provided by this template you must manually run the following command within the project directory after the bootstrap completes.
+✅ Works with [Crestron CH5 CrComLib](https://www.npmjs.com/package/@crestron/ch5-crcomlib) out of the box. No need to manually edit the CrComLib package.json 👍
 
-```sh
-npm run husky:install
+✅ React v18 Ready
 
-# or
+✅ Eruda Setup
 
-yarn husky:install
-```
+✅ Basic Redux Setup
 
-To use this template, add `--template @norgate-av/crestron-ch5-typescript` when creating a new app.
+✅ Basic GitHub Actions CI
 
-For example:
-
-```sh
-npx create-react-app my-app --template @norgate-av/crestron-ch5-typescript
-
-# or
-
-yarn create react-app my-app --template @norgate-av/crestron-ch5-typescript
-```
-
-## What does this template provide?
+## What's in the Box? :package:
 
 -   [Crestron CH5 CrComLib](https://www.npmjs.com/package/@crestron/ch5-crcomlib)
 -   [Crestron CH5 WebXPanel](https://www.npmjs.com/package/@crestron/ch5-webxpanel)
@@ -78,7 +76,33 @@ yarn create react-app my-app --template @norgate-av/crestron-ch5-typescript
 -   [Docker Support](https://www.docker.com/)
     -   **Requires** [Docker](https://docs.docker.com/get-docker/) and [Docker-Compose](https://docs.docker.com/compose/install/) to be installed on your local machine. [Portainer](https://www.portainer.io/) is also recommended as a front end for managing Docker containers. It is free and open-source.
 
-## Project Setup
+## Getting Started :rocket:
+
+To use this template, add `--template @norgate-av/crestron-ch5-typescript` when creating a new app.
+
+For example:
+
+```sh
+npx create-react-app my-app --template @norgate-av/crestron-ch5-typescript
+
+# or
+
+yarn create react-app my-app --template @norgate-av/crestron-ch5-typescript
+```
+
+**NOTE**
+
+To use the Husky Git Hooks feature provided by this template you must manually run the following command within the project directory after the bootstrap completes.
+
+```sh
+npm run husky:install
+
+# or
+
+yarn husky:install
+```
+
+## Project Setup :zap:
 
 To upload to a Crestron touchscreen or control system, you must add the IP address or hostname to the project properties in `package.json`.
 
@@ -140,6 +164,8 @@ Thanks go to these awesome people ([emoji key](https://allcontributors.org/docs/
 
 This project follows the [all-contributors](https://allcontributors.org) specification.
 Contributions of any kind are welcome!
+
+Check out the [contributing guide](CONTRIBUTING.md) for more information.
 
 ## LICENSE :balance_scale:
 
