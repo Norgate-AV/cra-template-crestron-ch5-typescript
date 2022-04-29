@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 17.x]
+        node-version: [16.x]
         os: [ubuntu-latest, macOS-latest, windows-latest]
 
     steps:
@@ -41,7 +41,11 @@ jobs:
           pwd
           npm run test
           npm run build
+          ls -la build/
+          tree build/
           npm run build:archive
+          ls -la dist/
+          tree dist/
           cd ..
           pwd
 
@@ -52,6 +56,10 @@ jobs:
           pwd
           yarn test
           yarn build
+          ls -la build/
+          tree build/
           yarn build:archive
+          ls -la dist/
+          tree dist/
           cd ..
           pwd
