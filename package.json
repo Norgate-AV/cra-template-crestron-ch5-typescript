@@ -32,15 +32,32 @@
         "build": "echo \"Build is not configured for package \\\"$npm_package_name\\\", skipping.\"",
         "test": "echo \"Unit testing is not configured for package \\\"$npm_package_name\\\", skipping.\"",
         "prepare": "husky install",
-        "pretty:fix": "prettier --write ."
+        "pretty:fix": "prettier --write .",
+        "doctoc": "doctoc --title '## Contents 📖' README.md",
+        "contrib:add": "all-contributors add",
+        "contrib:generate": "all-contributors generate",
+        "contrib:check": "all-contributors check"
     },
     "devDependencies": {
         "@commitlint/cli": "^16.2.3",
         "@commitlint/config-conventional": "^16.2.1",
+        "@semantic-release/changelog": "^6.0.1",
+        "@semantic-release/git": "^10.0.1",
+        "all-contributors-cli": "^6.20.0",
         "cz-conventional-changelog": "3.3.0",
+        "doctoc": "^2.1.0",
         "husky": "^7.0.0",
+        "lint-staged": "^12.4.0",
         "prettier": "^2.6.2",
         "semantic-release": "^19.0.2"
+    },
+    "lint-staged": {
+        "*?(test|spec).{js,jsx,ts,tsx}": [
+            "yarn pretty:fix"
+        ],
+        "*.{css,scss,md,html,json,yml,yaml}": [
+            "yarn pretty:fix"
+        ]
     },
     "config": {
         "commitizen": {
