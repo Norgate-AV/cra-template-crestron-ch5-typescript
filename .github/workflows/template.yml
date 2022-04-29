@@ -40,8 +40,8 @@ jobs:
           cd npx-test
           pwd
           npm run test
-          npm run start
           npm run build
+          npm run build:archive
           cd ..
           pwd
 
@@ -51,7 +51,7 @@ jobs:
           cd yarn-test
           pwd
           yarn test
-          yarn start
           yarn build
+          yarn build:archive
           cd ..
           pwd
