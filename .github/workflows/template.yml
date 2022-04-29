@@ -1,6 +1,7 @@
-name: Template Test
+name: Template
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
 
 jobs:
   build:
