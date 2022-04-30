@@ -28,6 +28,9 @@ jobs:
       - name: Install (with cache)
         uses: bahmutov/npm-install@v1
 
+      - name: Lint
+        run: yarn lint:fix
+
       - name: Test
         run: yarn test
 
@@ -36,6 +39,7 @@ jobs:
 
       - name: Create Template (npx)
         run: |
+          echo ${{ github.workspace }}
           pwd
           cd ..
           pwd
@@ -46,14 +50,14 @@ jobs:
           npm run build
           npm run build:archive
 
-      - name: Create Template (yarn)
-        run: |
-          pwd
-          cd ..
-          pwd
-          yarn create react-app yarn-test --template file:./cra-template-crestron-ch5-typescript
-          cd yarn-test
-          pwd
-          yarn test
-          yarn build
-          yarn build:archive
+      # - name: Create Template (yarn)
+      #   run: |
+      #     pwd
+      #     cd ..
+      #     pwd
+      #     yarn create react-app yarn-test --template file:./cra-template-crestron-ch5-typescript
+      #     cd yarn-test
+      #     pwd
+      #     yarn test
+      #     yarn build
+      #     yarn build:archive
