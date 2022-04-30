@@ -25,11 +25,38 @@ jobs:
       - name: Install (with cache)
         uses: bahmutov/npm-install@v1
 
+      - name: Pretty
+        run: yarn pretty:fix
+
       - name: Test
         run: yarn test
 
       - name: Build
         run: yarn build
+
+      - name: Create Template (npx)
+        run: |
+          pwd
+          cd ${{ github.workspace }}/..
+          pwd
+          npx create-react-app npx-test --template file:${{ github.workspace }}
+          cd npx-test
+          pwd
+          npm run test
+          npm run build
+          npm run build:archive
+
+      - name: Create Template (yarn)
+        run: |
+          pwd
+          cd ${{ github.workspace }}/..
+          pwd
+          yarn create react-app yarn-test --template file:${{ github.workspace }}
+          cd yarn-test
+          pwd
+          yarn test
+          yarn build
+          yarn build:archive
 
   publish:
     runs-on: ubuntu-latest
