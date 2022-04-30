@@ -28,8 +28,8 @@ jobs:
       - name: Install (with cache)
         uses: bahmutov/npm-install@v1
 
-      - name: Lint
-        run: yarn lint:fix
+      - name: Pretty
+        run: yarn pretty:fix
 
       - name: Test
         run: yarn test
