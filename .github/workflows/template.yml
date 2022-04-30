@@ -39,25 +39,24 @@ jobs:
 
       - name: Create Template (npx)
         run: |
-          echo ${{ github.workspace }}
           pwd
-          cd ..
+          cd ${{ github.workspace }}/..
           pwd
-          npx create-react-app npx-test --template file:./cra-template-crestron-ch5-typescript
+          npx create-react-app npx-test --template file:${{ github.workspace }}
           cd npx-test
           pwd
           npm run test
           npm run build
           npm run build:archive
 
-      # - name: Create Template (yarn)
-      #   run: |
-      #     pwd
-      #     cd ..
-      #     pwd
-      #     yarn create react-app yarn-test --template file:./cra-template-crestron-ch5-typescript
-      #     cd yarn-test
-      #     pwd
-      #     yarn test
-      #     yarn build
-      #     yarn build:archive
+      - name: Create Template (yarn)
+        run: |
+          pwd
+          cd ${{ github.workspace }}/..
+          pwd
+          yarn create react-app yarn-test --template file:${{ github.workspace }}
+          cd yarn-test
+          pwd
+          yarn test
+          yarn build
+          yarn build:archive
