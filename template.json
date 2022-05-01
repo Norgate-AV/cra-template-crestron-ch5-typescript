@@ -100,7 +100,12 @@
             "@typescript-eslint/parser": "^5.14.0",
             "autoprefixer": "^10.4.5",
             "classnames": "^2.3.1",
+            "concurrently": "^7.0.0",
+            "cross-env": "^7.0.3",
             "cz-conventional-changelog": "3.3.0",
+            "electron": "^17.2.0",
+            "electron-builder": "^22.14.13",
+            "electron-is-dev": "^2.0.0",
             "eslint": "^8.11.0",
             "eslint-config-airbnb": "^19.0.4",
             "eslint-config-airbnb-typescript": "^16.1.2",
@@ -121,7 +126,8 @@
             "run-script-os": "^1.1.6",
             "sponge": "^0.1.0",
             "tailwindcss": "^3.0.24",
-            "typescript": "^4.6.3"
+            "typescript": "^4.6.3",
+            "wait-on": "^6.0.1"
         },
         "lint-staged": {
             "*.{js,jsx,ts,tsx}": ["yarn lint:fix", "yarn pretty:fix"],
