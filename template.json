@@ -99,6 +99,7 @@
             "@types/styled-components": "^5.1.24",
             "@typescript-eslint/eslint-plugin": "^5.14.0",
             "@typescript-eslint/parser": "^5.14.0",
+            "autoprefixer": "^10.4.5",
             "cz-conventional-changelog": "3.3.0",
             "eslint": "^8.11.0",
             "eslint-config-airbnb": "^19.0.4",
@@ -114,10 +115,12 @@
             "ncp": "^2.0.0",
             "node-jq": "^2.1.0",
             "node-sass": "^7.0.1",
+            "postcss": "^8.4.13",
             "prettier": "^2.5.1",
             "rimraf": "^3.0.2",
             "run-script-os": "^1.1.6",
-            "sponge": "^0.1.0"
+            "sponge": "^0.1.0",
+            "tailwindcss": "^3.0.24"
         },
         "lint-staged": {
             "*.{js,jsx,ts,tsx}": ["yarn lint:fix", "yarn pretty:fix"],
