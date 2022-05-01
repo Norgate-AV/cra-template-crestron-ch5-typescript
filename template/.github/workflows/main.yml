@@ -33,3 +33,6 @@ jobs:
 
       - name: Build
         run: yarn build
+
+      - name: Archive
+        run: yarn build:archive
