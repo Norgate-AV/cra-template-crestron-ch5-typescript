@@ -1,5 +1,6 @@
 {
     "package": {
+        "main": "electron/main.js",
         "dependencies": {
             "@crestron/ch5-crcomlib": "^1.2.0",
             "@crestron/ch5-webxpanel": "^1.2.5",
