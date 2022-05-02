@@ -83,6 +83,9 @@
             }
         },
         "devDependencies": {
+            "@babel/core": "^7.17.10",
+            "@babel/plugin-syntax-flow": "^7.16.7",
+            "@babel/plugin-transform-react-jsx": "^7.17.3",
             "@commitlint/cli": "^16.2.3",
             "@commitlint/config-conventional": "^16.2.1",
             "@crestron/ch5-utilities-cli": "^0.1.52",
