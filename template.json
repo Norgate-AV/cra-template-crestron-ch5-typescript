@@ -89,6 +89,7 @@
             "@commitlint/cli": "^16.2.3",
             "@commitlint/config-conventional": "^16.2.1",
             "@crestron/ch5-utilities-cli": "^0.1.52",
+            "@testing-library/dom": "^8.13.0",
             "@testing-library/jest-dom": "^5.16.2",
             "@testing-library/react": "^13.1.1",
             "@testing-library/user-event": "^13.5.0",
