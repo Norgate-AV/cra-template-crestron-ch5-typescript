@@ -7,7 +7,7 @@ import controlSystemReducer from "../../redux/state/controlSystem";
 import webXPanelReducer from "../../redux/state/webXPanel";
 
 function render(
-    ui: React.ReactElement,
+    element: React.ReactElement,
     {
         store = configureStore({
             reducer: {
@@ -22,7 +22,7 @@ function render(
         return <Provider store={store}>{children}</Provider>;
     }
 
-    return rtlRender(ui, { wrapper: Wrapper, ...renderOptions });
+    return rtlRender(element, { wrapper: Wrapper, ...renderOptions });
 }
 
 export * from "@testing-library/react";
