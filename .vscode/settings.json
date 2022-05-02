@@ -17,5 +17,20 @@
         "**/.DS_Store": true,
         "**/*.js.map": true,
         "node_modules": true
+    },
+    "markdownlint.config": {
+        // "default": true,
+        // "MD003": { "style": "atx_closed" },
+        "MD007": { "indent": 4 },
+        // "no-hard-tabs": false
+        "MD026": false,
+        "MD033": false,
+        "MD030": {
+            "ul_single": 3,
+            "ul_multi": 3
+        }
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.markdownlint": true
     }
 }
