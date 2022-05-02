@@ -5,9 +5,9 @@
  * For example:
  *
  * hooks/
- * |-> index.ts
  * |-> useSomeCustomHook/
- *     |-> index.ts
+ * |   |-> index.ts
+ * |-> index.ts
  *
  * Then export the hook from this file:
  * export { useSomeCustomHook } from "./useSomeCustomHook";
