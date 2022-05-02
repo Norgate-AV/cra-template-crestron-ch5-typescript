@@ -5,9 +5,11 @@
  * For example:
  *
  * components/
- * |-> index.ts
  * |-> SomeComponent/
- *     |-> index.tsx
+ * |   |-> index.ts (export * from "./SomeComponent";)
+ * |   |-> SomeComponent.styles.ts
+ * |   |-> SomeComponent.tsx
+ * |-> index.ts
  *
  * Then export the component from this file:
  * export { SomeComponent } from "./SomeComponent";
