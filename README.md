@@ -37,15 +37,17 @@ The template is setup to work with Crestron CH5 out of the box so you can get up
 
 ## Features :white_check_mark:
 
-✅ Works with [Crestron CH5 CrComLib](https://www.npmjs.com/package/@crestron/ch5-crcomlib) out of the box. No need to manually edit the CrComLib package.json 👍
-
-✅ React v18 Ready
-
-✅ Eruda Setup
-
-✅ Basic Redux Setup
-
-✅ Basic GitHub Actions CI
+-   ✅ Works with [Crestron CH5 CrComLib](https://www.npmjs.com/package/@crestron/ch5-crcomlib) out of the box.
+    -   No need to manually edit the CrComLib `package.json` 👍
+-   ✅ React v18 Ready
+-   ✅ Eruda Setup
+-   ✅ Basic Redux Setup
+-   ✅ Basic GitHub Actions CI
+-   ✅ Multiple Build Options
+    -   ✅ React App
+    -   ✅ Crestron CH5 Archive (`.ch5z`)
+    -   ✅ Docker Image
+    -   ✅ Electron App
 
 ## What's in the Box? :package:
 
