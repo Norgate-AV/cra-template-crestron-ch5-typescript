@@ -5,9 +5,23 @@
  * For example:
  *
  * containers/
- * |-> index.ts
  * |-> SomeContainer/
- *     |-> index.tsx
+ * |   |-> index.ts
+ * |   |-> SomeContainer.styles.ts
+ * |   |-> SomeContainer.tsx
+ * |-> pages/
+ * |   |-> Page/
+ * |   |   |-> index.ts
+ * |   |   |-> Page.styles.ts
+ * |   |   |-> Page.tsx
+ * |   |   |-> Page.test.tsx
+ * |   |-> AnotherPage/
+ * |   |   |-> index.ts
+ * |   |   |-> AnotherPage.styles.ts
+ * |   |   |-> AnotherPage.tsx
+ * |   |   |-> AnotherPage.test.tsx
+ * |   |-> index.ts
+ * |-> index.ts
  *
  * Then export the container from this file:
  * export { SomeContainer } from "./SomeContainer";
