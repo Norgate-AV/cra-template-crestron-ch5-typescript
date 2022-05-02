@@ -1,8 +1,8 @@
 # cra-template-crestron-ch5-typescript
 
 <div align="center">
-	<img src="./assets/logo.svg" alt="react-logo" width="200" />
-	<img src="./assets/crestron-ch5-logo.png" alt="ch5-logo" width="200" />
+ <img src="./assets/logo.svg" alt="react-logo" width="200" />
+ <img src="./assets/crestron-ch5-logo.png" alt="ch5-logo" width="200" />
 </div>
 
 ---
