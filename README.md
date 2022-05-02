@@ -53,35 +53,59 @@ The template is setup to work with Crestron CH5 out of the box so you can get up
 
 -   [Crestron CH5 CrComLib](https://www.npmjs.com/package/@crestron/ch5-crcomlib)
     -   Crestron HTML5 (CH5) Components Library
--   [Crestron CH5 WebXPanel](https://www.npmjs.com/package/@crestron/ch5-webxpanel) - Browser control of ch5 components library
--   [Crestron CH5 CLI](https://www.npmjs.com/package/@crestron/ch5-utilities-cli) - Crestron CH5 utilities
--   [Crestron CH5 Helper](https://www.npmjs.com/package/@norgate-av/crestron-ch5-helper) - A helper collection of Crestron CH5 constants 😀
--   [Typescript](https://www.typescriptlang.org/) - A superset of JavaScript that compiles to clean JavaScript output
--   [React Router](https://reactrouterdotcom.fly.dev/) - Declarative routing for React
--   [Redux](https://redux.js.org/) - Predictable state container for JavaScript apps
--   [React Redux](https://react-redux.js.org/) - Official React bindings for Redux
--   [Redux Toolkit](https://redux-toolkit.js.org/) - The official, opinionated, batteries-included toolset for efficient Redux development
--   [Styled Components](https://styled-components.com/) - Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps 💅
--   [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapid UI development
--   [clsx](https://www.npmjs.com/package/clsx) - A tiny (228B) utility for constructing className strings conditionally
--   [React Icons](https://react-icons.github.io/react-icons/) - svg react icons of popular icon packs
--   [React Crestron CH5 Hooks](https://www.npmjs.com/package/@norgate-av/react-crestron-ch5-hooks) - A collection of Crestron CH5 hooks ⚓ for React 😀
--   [Rooks](https://react-hooks.org/) - Essential React custom hooks ⚓ to super charge your components!
--   [Eruda](https://eruda.liriliri.io/) - Console for mobile browsers
--   [Axios](https://axios-http.com/) - Promise based HTTP client for the browser and node.js
--   [ESLint](https://eslint.org/) - Find and fix problems in your JavaScript code
--   [Prettier](https://prettier.io/) - An opinionated code formatter
--   [Husky](https://typicode.github.io/husky/#/) - Git hooks made easy 🐶 woof!
--   [Lint-Staged](https://github.com/okonet/lint-staged) - 🚫💩 — Run linters on git staged files
--   [Commitizen](https://commitizen-tools.github.io/commitizen/) - Create committing rules for projects 🚀 auto bump versions ⬆️ and auto changelog generation 📂
--   [commitlint](https://commitlint.js.org/#/) - 📓 Lint commit messages
--   [GitHub Actions CI](https://github.com/features/actions) - Automate your workflow
-    from idea to production
--   [VSCode Workspace Config](https://code.visualstudio.com/docs/getstarted/settings#_workspace-settings)
+-   [Crestron CH5 WebXPanel](https://www.npmjs.com/package/@crestron/ch5-webxpanel)
+    -   Browser control of ch5 components library
+-   [Crestron CH5 CLI](https://www.npmjs.com/package/@crestron/ch5-utilities-cli)
+    -   Crestron CH5 utilities
+-   [Crestron CH5 Helper](https://www.npmjs.com/package/@norgate-av/crestron-ch5-helper)
+    -   A helper collection of Crestron CH5 constants 😀
+-   [Typescript](https://www.typescriptlang.org/)
+    -   A superset of JavaScript that compiles to clean JavaScript output
+-   [React Router](https://reactrouterdotcom.fly.dev/)
+    -   Declarative routing for React
+-   [Redux](https://redux.js.org/)
+    -   Predictable state container for JavaScript apps
+-   [React Redux](https://react-redux.js.org/)
+    -   Official React bindings for Redux
+-   [Redux Toolkit](https://redux-toolkit.js.org/)
+    -   The official, opinionated, batteries-included toolset for efficient Redux development
+-   [Styled Components](https://styled-components.com/)
+    -   Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps 💅
+-   [Tailwind CSS](https://tailwindcss.com/)
+    -   A utility-first CSS framework for rapid UI development
+-   [clsx](https://www.npmjs.com/package/clsx)
+    -   A tiny (228B) utility for constructing className strings conditionally
+-   [React Icons](https://react-icons.github.io/react-icons/)
+    -   svg react icons of popular icon packs
+-   [React Crestron CH5 Hooks](https://www.npmjs.com/package/@norgate-av/react-crestron-ch5-hooks)
+    -   A collection of Crestron CH5 hooks ⚓ for React 😀
+-   [Rooks](https://react-hooks.org/)
+    -   Essential React custom hooks ⚓ to super charge your components!
+-   [Eruda](https://eruda.liriliri.io/)
+    -   Console for mobile browsers
+-   [Axios](https://axios-http.com/)
+    -   Promise based HTTP client for the browser and node.js
+-   [ESLint](https://eslint.org/)
+    -   Find and fix problems in your JavaScript code
+-   [Prettier](https://prettier.io/)
+    -   An opinionated code formatter
+-   [Husky](https://typicode.github.io/husky/#/)
+    -   Git hooks made easy 🐶 woof!
+-   [Lint-Staged](https://github.com/okonet/lint-staged)
+    -   🚫💩 — Run linters on git staged files
+-   [Commitizen](https://commitizen-tools.github.io/commitizen/)
+    -   Create committing rules for projects 🚀 auto bump versions ⬆️ and auto changelog generation 📂
+-   [commitlint](https://commitlint.js.org/#/)
+    -   📓 Lint commit messages
+-   [GitHub Actions CI](https://github.com/features/actions)
+    -   Automate your workflow from idea to production
+-   [VSCode Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings#_workspace-settings)
 -   [EditorConfig](https://editorconfig.org/)
--   [Docker Support](https://www.docker.com/) - Build safer, share wider, run faster
+-   [Docker Support](https://www.docker.com/)
+    -   Build safer, share wider, run faster
     -   **Requires** [Docker](https://docs.docker.com/get-docker/) and [Docker-Compose](https://docs.docker.com/compose/install/) to be installed on your local machine. [Portainer](https://www.portainer.io/) is also recommended as a front end for managing Docker containers. It is free and open-source.
--   [Electron Support](https://electronjs.org/) - Build cross-platform desktop apps with JavaScript, HTML, and CSS
+-   [Electron Support](https://electronjs.org/)
+    -   Build cross-platform desktop apps with JavaScript, HTML, and CSS
 
 ## Getting Started :rocket:
 
