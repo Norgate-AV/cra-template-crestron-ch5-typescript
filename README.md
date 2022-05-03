@@ -198,12 +198,14 @@ Contributions of any kind are welcome!
 
 Check out the [contributing guide](CONTRIBUTING.md) for more information.
 
-## LICENSE :balance_scale:
+## Learn More :books:
 
-[MIT](LICENSE)
-
-For more information, please refer to:
+To learn more, check out the following resources:
 
 -   [Getting Started](https://create-react-app.dev/docs/getting-started) – How to create a new app.
 -   [User Guide](https://create-react-app.dev) – How to develop apps bootstrapped with Create React App.
--   [Crestron CH5 Documentation](https://sdkcon78221.crestron.com/sdk/Crestron_HTML5UI/Content/Topics/Home.htm)
+-   [Crestron CH5](https://sdkcon78221.crestron.com/sdk/Crestron_HTML5UI/Content/Topics/Home.htm) - Documentation and resources for developing with Crestron CH5.
+
+## LICENSE :balance_scale:
+
+[MIT](LICENSE)
