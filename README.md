@@ -93,15 +93,15 @@ Setup to work with Crestron CH5 out of the box so you can get up and running qui
     -   An opinionated code formatter
 -   [Husky](https://typicode.github.io/husky/#/)
     -   Git hooks made easy 🐶 woof!
-    -   **NOTE** This feature needs to be manually enabled. See [here](#install-husky-git-hooks-dog) for more details.
+    -   **NOTE** This feature needs to be manually enabled. See [here](##enable-husky-git-hooks-dog) for more details.
 -   [Lint-Staged](https://github.com/okonet/lint-staged)
     -   🚫💩 — Run linters on git staged files
-    -   **Requires** [Husky](#install-husky-git-hooks-dog) to be enabled.
+    -   **Requires** [Husky](##enable-husky-git-hooks-dog) to be enabled.
 -   [Commitizen](https://commitizen-tools.github.io/commitizen/)
     -   Create committing rules for projects 🚀 auto bump versions ⬆️ and auto changelog generation 📂
 -   [commitlint](https://commitlint.js.org/#/)
     -   📓 Lint commit messages
-    -   **Requires** [Husky](#install-husky-git-hooks-dog) to be enabled.
+    -   **Requires** [Husky](##enable-husky-git-hooks-dog) to be enabled.
 -   [GitHub Actions CI](https://github.com/features/actions)
     -   Automate your workflow from idea to production
 -   [VSCode Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings#_workspace-settings)
