@@ -49,7 +49,7 @@ Setup to work with Crestron CH5 out of the box so you can get up and running qui
     -   ✅ Docker Image
     -   ✅ Electron App
 
-## What's in the Box? :package:
+## Inside the Box :package:
 
 -   [Crestron CH5 CrComLib](https://www.npmjs.com/package/@crestron/ch5-crcomlib)
     -   Crestron HTML5 (CH5) Components Library
