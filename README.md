@@ -16,9 +16,9 @@
 
 ---
 
-This is an unofficial third party TypeScript template for [Create React App](https://github.com/facebook/create-react-app) and [Crestron CH5](https://www.npmjs.com/package/@crestron/ch5-crcomlib)
+An unofficial third party TypeScript template for [Create React App](https://github.com/facebook/create-react-app) and [Crestron CH5](https://www.npmjs.com/package/@crestron/ch5-crcomlib).
 
-The template is setup to work with Crestron CH5 out of the box so you can get up and running quickly. It also provides packages for page routing, styling using [CSS-in-JS](https://en.wikipedia.org/wiki/CSS-in-JS) (you can still use regular CSS or SCSS 😄), a wide variety of icons, mobile browser console, linting and more... 🚀 🚀 🚀
+Setup to work with Crestron CH5 out of the box so you can get up and running quickly. It provides packages for page routing, styling using [CSS-in-JS](https://en.wikipedia.org/wiki/CSS-in-JS) and/or [TailwindCSS](https://tailwindcss.com/) (you can still use regular CSS, SCSS or even [CSS Modules](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/) 😄), a wide variety of icons, mobile browser console, linting and more... 🚀 🚀 🚀
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
