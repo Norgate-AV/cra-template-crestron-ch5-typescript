@@ -91,7 +91,7 @@
             "@crestron/ch5-utilities-cli": "^0.1.52",
             "@testing-library/dom": "^8.13.0",
             "@testing-library/jest-dom": "^5.16.2",
-            "@testing-library/react": "^13.1.1",
+            "@testing-library/react": "^13.2.0",
             "@testing-library/user-event": "^14.1.1",
             "@types/jest": "^27.4.1",
             "@types/ncp": "^2.0.5",
