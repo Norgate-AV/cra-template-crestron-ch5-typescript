@@ -71,7 +71,7 @@ Setup to work with Crestron CH5 out of the box so you can get up and running qui
     -   The official, opinionated, batteries-included toolset for efficient Redux development
 -   [Styled Components](https://styled-components.com/)
     -   Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps 💅
--   [Tailwind CSS](https://tailwindcss.com/)
+-   [TailwindCSS](https://tailwindcss.com/)
     -   A utility-first CSS framework for rapid UI development
 -   [clsx](https://www.npmjs.com/package/clsx)
     -   A tiny (228B) utility for constructing className strings conditionally
