@@ -133,9 +133,9 @@ npm run husky:install
 yarn husky:install
 ```
 
-## Project Setup :zap:
+## Project Configuration :zap:
 
-To upload to a Crestron touchscreen or control system, you must add the IP address or hostname to the project properties in `package.json`.
+To upload to a Crestron touchscreen or control system using the scripts provided by this template, add the IP address or hostname to the project properties in `package.json`.
 
 ```json
 {
