@@ -26,11 +26,12 @@ Setup to work with Crestron CH5 out of the box so you can get up and running qui
 ## Contents 📖
 
 -   [Features :white_check_mark:](#features-white_check_mark)
--   [What's in the Box? :package:](#whats-in-the-box-package)
+-   [Inside the Box :package:](#inside-the-box-package)
 -   [Getting Started :rocket:](#getting-started-rocket)
--   [Project Setup :zap:](#project-setup-zap)
+-   [Project Configuration :zap:](#project-configuration-zap)
 -   [Team :soccer:](#team-soccer)
 -   [Contributors :sparkles:](#contributors-sparkles)
+-   [Learn More :books:](#learn-more-books)
 -   [LICENSE :balance_scale:](#license-balance_scale)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
