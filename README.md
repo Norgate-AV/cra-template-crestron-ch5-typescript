@@ -28,6 +28,7 @@ Setup to work with Crestron CH5 out of the box so you can get up and running qui
 -   [Features :white_check_mark:](#features-white_check_mark)
 -   [Inside the Box :package:](#inside-the-box-package)
 -   [Getting Started :rocket:](#getting-started-rocket)
+-   [Enable Husky Git Hooks :dog:](#enable-husky-git-hooks-dog)
 -   [Project Configuration :zap:](#project-configuration-zap)
 -   [Team :soccer:](#team-soccer)
 -   [Contributors :sparkles:](#contributors-sparkles)
@@ -92,12 +93,15 @@ Setup to work with Crestron CH5 out of the box so you can get up and running qui
     -   An opinionated code formatter
 -   [Husky](https://typicode.github.io/husky/#/)
     -   Git hooks made easy 🐶 woof!
+    -   **NOTE** This feature needs to be manually enabled. See [here](#install-husky-git-hooks-dog) for more details.
 -   [Lint-Staged](https://github.com/okonet/lint-staged)
     -   🚫💩 — Run linters on git staged files
+    -   **Requires** [Husky](#install-husky-git-hooks-dog) to be enabled.
 -   [Commitizen](https://commitizen-tools.github.io/commitizen/)
     -   Create committing rules for projects 🚀 auto bump versions ⬆️ and auto changelog generation 📂
 -   [commitlint](https://commitlint.js.org/#/)
     -   📓 Lint commit messages
+    -   **Requires** [Husky](#install-husky-git-hooks-dog) to be enabled.
 -   [GitHub Actions CI](https://github.com/features/actions)
     -   Automate your workflow from idea to production
 -   [VSCode Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings#_workspace-settings)
@@ -122,9 +126,9 @@ npx create-react-app my-app --template @norgate-av/crestron-ch5-typescript
 yarn create react-app my-app --template @norgate-av/crestron-ch5-typescript
 ```
 
-**NOTE**
+## Enable Husky Git Hooks :dog:
 
-To use the Husky Git Hooks feature provided by this template you must manually run the following command within the project directory after the bootstrap completes.
+Currently, to use the Husky Git Hooks feature provided by this template you must manually run the following command within the project directory after the bootstrap completes. This will update the local git configuration to use the hooks in the `.husky` directory.
 
 ```sh
 npm run husky:install
