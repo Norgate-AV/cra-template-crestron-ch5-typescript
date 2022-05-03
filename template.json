@@ -46,7 +46,7 @@
             "lint": "eslint .",
             "lint:fix": "eslint --fix .",
             "commit": "git-cz",
-            "husky:install": "husky install",
+            "prepare": "husky install",
             "pretty:fix": "prettier --write .",
             "build:electron": "yarn build && electron-builder -wml",
             "electron:dev": "concurrently \"cross-env BROWSER=none yarn start\" \"wait-on http://127.0.0.1:3000 && electron .\""
