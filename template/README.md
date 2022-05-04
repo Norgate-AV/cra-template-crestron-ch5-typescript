@@ -2,9 +2,70 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-**NOTE**
+## Inside the Box :package:
 
-To use the Husky Git Hooks feature provided by this template you must manually run the following command within the project directory after the bootstrap completes.
+-   [Crestron CH5 CrComLib](https://www.npmjs.com/package/@crestron/ch5-crcomlib)
+    -   Crestron HTML5 (CH5) Components Library
+-   [Crestron CH5 WebXPanel](https://www.npmjs.com/package/@crestron/ch5-webxpanel)
+    -   Browser control of ch5 components library
+-   [Crestron CH5 CLI](https://www.npmjs.com/package/@crestron/ch5-utilities-cli)
+    -   Crestron CH5 utilities
+-   [Crestron CH5 Helper](https://www.npmjs.com/package/@norgate-av/crestron-ch5-helper)
+    -   A helper collection of Crestron CH5 constants 😀
+-   [Typescript](https://www.typescriptlang.org/)
+    -   A superset of JavaScript that compiles to clean JavaScript output
+-   [React Router](https://reactrouterdotcom.fly.dev/)
+    -   Declarative routing for React
+-   [Redux](https://redux.js.org/)
+    -   Predictable state container for JavaScript apps
+-   [React Redux](https://react-redux.js.org/)
+    -   Official React bindings for Redux
+-   [Redux Toolkit](https://redux-toolkit.js.org/)
+    -   The official, opinionated, batteries-included toolset for efficient Redux development
+-   [Styled Components](https://styled-components.com/)
+    -   Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps 💅
+-   [TailwindCSS](https://tailwindcss.com/)
+    -   A utility-first CSS framework for rapid UI development
+-   [clsx](https://www.npmjs.com/package/clsx)
+    -   A tiny (228B) utility for constructing className strings conditionally
+-   [React Icons](https://react-icons.github.io/react-icons/)
+    -   svg react icons of popular icon packs
+-   [React Crestron CH5 Hooks](https://www.npmjs.com/package/@norgate-av/react-crestron-ch5-hooks)
+    -   A collection of Crestron CH5 hooks ⚓ for React 😀
+-   [Rooks](https://react-hooks.org/)
+    -   Essential React custom hooks ⚓ to super charge your components!
+-   [Eruda](https://eruda.liriliri.io/)
+    -   Console for mobile browsers
+-   [Axios](https://axios-http.com/)
+    -   Promise based HTTP client for the browser and node.js
+-   [ESLint](https://eslint.org/)
+    -   Find and fix problems in your JavaScript code
+-   [Prettier](https://prettier.io/)
+    -   An opinionated code formatter
+-   [Husky](https://typicode.github.io/husky/#/)
+    -   Git hooks made easy 🐶 woof!
+    -   **NOTE** This feature needs to be manually enabled. See [here](#enable-husky-git-hooks-dog) for more details.
+-   [Lint-Staged](https://github.com/okonet/lint-staged)
+    -   🚫💩 — Run linters on git staged files
+    -   **Requires** [Husky](#enable-husky-git-hooks-dog) to be enabled.
+-   [Commitizen](https://commitizen-tools.github.io/commitizen/)
+    -   Create committing rules for projects 🚀 auto bump versions ⬆️ and auto changelog generation 📂
+-   [commitlint](https://commitlint.js.org/#/)
+    -   📓 Lint commit messages
+    -   **Requires** [Husky](#enable-husky-git-hooks-dog) to be enabled.
+-   [GitHub Actions CI](https://github.com/features/actions)
+    -   Automate your workflow from idea to production
+-   [VSCode Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings#_workspace-settings)
+-   [EditorConfig](https://editorconfig.org/)
+-   [Docker Support](https://www.docker.com/)
+    -   Build safer, share wider, run faster
+    -   **Requires** [Docker](https://docs.docker.com/get-docker/) and [Docker-Compose](https://docs.docker.com/compose/install/) to be installed on your local machine. [Portainer](https://www.portainer.io/) is also recommended as a front end for managing Docker containers. It is free and open-source.
+-   [Electron Support](https://electronjs.org/)
+    -   Build cross-platform desktop apps with JavaScript, HTML, and CSS
+
+## Enable Husky Git Hooks :dog:
+
+Currently, to use the Husky Git Hooks feature provided by this template you must manually run the following command within the project directory after the bootstrap completes. This will update the local git configuration to use the hooks in the `.husky` directory.
 
 ```sh
 npm run husky:install
@@ -14,47 +75,9 @@ npm run husky:install
 yarn husky:install
 ```
 
-## Crestron CH5 Specific
+## Project Configuration :zap:
 
-`yarn build` will compile the code in src to the build directory.  
-`yarn build:archive` will build a ch5z file from the most recently built build and output to the dist folder.
-
-`yarn build:deploy:touchscreen` will deploy the ch5z from the dist folder to a touchscreen.  
-`yarn build:onestep:touchscreen` will execute the build, archive and deploy steps in sequence.
-
-`yarn build:deploy:web` will deploy the ch5z from the dist folder to a control system.  
-`yarn build:onestep:web` will execute the build, archive and deploy steps in sequence.
-
-To learn more about Crestron CH5, check out the [Crestron CH5 documentation](https://sdkcon78221.crestron.com/sdk/Crestron_HTML5UI/Content/Topics/Home.htm).
-
-## What does this template provide?
-
--   [Crestron CH5 CrComLib](https://www.npmjs.com/package/@crestron/ch5-crcomlib)
--   [Crestron CH5 WebXPanel](https://www.npmjs.com/package/@crestron/ch5-webxpanel)
--   [Crestron CH5 CLI](https://www.npmjs.com/package/@crestron/ch5-utilities-cli)
--   [Crestron CH5 Helper](https://www.npmjs.com/package/@norgate-av/crestron-ch5-helper)
--   [Typescript](https://www.typescriptlang.org/)
--   [React Router](https://reactrouterdotcom.fly.dev/)
--   [Redux](https://redux.js.org/)
--   [React Redux](https://react-redux.js.org/)
--   [Redux Toolkit](https://redux-toolkit.js.org/)
--   [Styled Components](https://styled-components.com/)
--   [React Icons](https://react-icons.github.io/react-icons/)
--   [Rooks](https://react-hooks.org/)
--   [Eruda](https://eruda.liriliri.io/)
--   [Axios](https://axios-http.com/)
--   [ESLint](https://eslint.org/)
--   [Prettier](https://prettier.io/)
--   [Husky](https://typicode.github.io/husky/#/)
--   [Lint-Staged](https://github.com/okonet/lint-staged)
--   [Commitizen](https://commitizen-tools.github.io/commitizen/)
--   [commitlint](https://commitlint.js.org/#/)
--   [VSCode Workspace Config](https://code.visualstudio.com/docs/getstarted/settings#_workspace-settings)
--   [EditorConfig](https://editorconfig.org/)
-
-## Project Setup
-
-To upload to a Crestron touchscreen or control system, you must add the IP address or hostname to the project properties in `package.json`.
+To upload to a Crestron touchscreen or control system using the scripts provided by this template, add the IP address or hostname to the project properties in `package.json`.
 
 ```json
 {
@@ -104,6 +127,26 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn build:archive`
+
+Builds a Crestron CH5 `.ch5z` archive file from the most recent build and outputs to the dist folder.
+
+### `yarn build:deploy:touchscreen`
+
+Deploys the Crestron CH5 `.ch5z` archive file from the dist folder to a touchscreen.
+
+### `yarn build:onestep:touchscreen`
+
+Executes the build, archive and deploy steps in sequence.
+
+### `yarn build:deploy:web`
+
+Deploy the Crestron CH5 `.ch5z` archive file from the dist folder to a control system.
+
+### `yarn build:onestep:web`
+
+Executes the build, archive and deploy steps in sequence.
 
 ### `yarn eject`
 
