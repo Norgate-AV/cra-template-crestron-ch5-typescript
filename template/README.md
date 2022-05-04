@@ -28,6 +28,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     -   [Electron](#electron)
         -   [`yarn build:electron`](#yarn-buildelectron)
         -   [`yarn electron:dev`](#yarn-electrondev)
+    -   [General](#general)
+        -   [`yarn clean:all`](#yarn-cleanall)
+        -   [`yarn commit`](#yarn-commit)
+        -   [`yarn lint`](#yarn-lint)
+        -   [`yarn lint:fix`](#yarn-lintfix)
+        -   [`yarn pretty:fix`](#yarn-prettyfix)
 -   [Learn More :books:](#learn-more-books)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -226,6 +232,30 @@ Builds the application into a standalone Electron desktop application.
 Starts the Electron application in development mode.\
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+### General
+
+#### `yarn clean:all`
+
+Deletes the `build` and `dist` directories.
+
+#### `yarn commit`
+
+Invokes the [Commitizen](https://commitizen-tools.github.io/commitizen/) CLI and walks you through a series of prompts to fill out the commit message in the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) format.
+
+#### `yarn lint`
+
+Will run the linter on the project and report any errors.
+
+#### `yarn lint:fix`
+
+Will run the linter on the project and automatically fix any fixable errors.\
+This script is run automatically by [Lint-Staged](https://github.com/okonet/lint-staged) on any files being committed to the Git repository if [Husky](https://typicode.github.io/husky/#/) is enabled. See [here](#enable-husky-git-hooks-dog) to enable Husky.
+
+#### `yarn pretty:fix`
+
+Applies the Prettier formatting rules to the project.\
+This script is run automatically by [Lint-Staged](https://github.com/okonet/lint-staged) on any files being committed to the Git repository if [Husky](https://typicode.github.io/husky/#/) is enabled. See [here](#enable-husky-git-hooks-dog) to enable Husky.
 
 ## Learn More :books:
 
