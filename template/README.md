@@ -7,22 +7,44 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Contents 📖
 
+-   [Features :white_check_mark:](#features-white_check_mark)
 -   [Inside the Box :package:](#inside-the-box-package)
 -   [Enable Husky Git Hooks :dog:](#enable-husky-git-hooks-dog)
 -   [Project Configuration :zap:](#project-configuration-zap)
--   [Available Scripts](#available-scripts)
-    -   [`yarn start`](#yarn-start)
-    -   [`yarn test`](#yarn-test)
-    -   [`yarn build`](#yarn-build)
-    -   [`yarn build:archive`](#yarn-buildarchive)
-    -   [`yarn build:deploy:touchscreen`](#yarn-builddeploytouchscreen)
-    -   [`yarn build:onestep:touchscreen`](#yarn-buildonesteptouchscreen)
-    -   [`yarn build:deploy:web`](#yarn-builddeployweb)
-    -   [`yarn build:onestep:web`](#yarn-buildonestepweb)
-    -   [`yarn eject`](#yarn-eject)
--   [Learn More](#learn-more)
+-   [Available Scripts :rocket:](#available-scripts-rocket)
+    -   [Create React App](#create-react-app)
+        -   [`yarn start`](#yarn-start)
+        -   [`yarn test`](#yarn-test)
+        -   [`yarn build`](#yarn-build)
+        -   [`yarn eject`](#yarn-eject)
+    -   [Crestron CH5](#crestron-ch5)
+        -   [`yarn build:archive`](#yarn-buildarchive)
+        -   [`yarn build:deploy:touchscreen`](#yarn-builddeploytouchscreen)
+        -   [`yarn build:onestep:touchscreen`](#yarn-buildonesteptouchscreen)
+        -   [`yarn build:deploy:web`](#yarn-builddeployweb)
+        -   [`yarn build:onestep:web`](#yarn-buildonestepweb)
+    -   [Docker](#docker)
+        -   [`yarn build:docker`](#yarn-builddocker)
+    -   [Electron](#electron)
+        -   [`yarn build:electron`](#yarn-buildelectron)
+        -   [`yarn electron:dev`](#yarn-electrondev)
+-   [Learn More :books:](#learn-more-books)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Features :white_check_mark:
+
+-   ✅ Works with [Crestron CH5 CrComLib](https://www.npmjs.com/package/@crestron/ch5-crcomlib) out of the box.
+    -   No need to manually edit the CrComLib `package.json` 👍
+-   ✅ React v18 Ready
+-   ✅ Eruda Setup
+-   ✅ Basic Redux Setup
+-   ✅ Basic GitHub Actions CI
+-   ✅ Multiple Build Options
+    -   ✅ React App
+    -   ✅ Crestron CH5 Archive (`.ch5z`)
+    -   ✅ Docker Image
+    -   ✅ Electron App
 
 ## Inside the Box :package:
 
@@ -123,11 +145,13 @@ To upload to a Crestron touchscreen or control system using the scripts provided
 }
 ```
 
-## Available Scripts
+## Available Scripts :rocket:
 
 In the project directory, you can run:
 
-### `yarn start`
+### Create React App
+
+#### `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -135,12 +159,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `yarn test`
+#### `yarn test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+#### `yarn build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -150,27 +174,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn build:archive`
-
-Builds a Crestron CH5 `.ch5z` archive file from the most recent build and outputs to the dist folder.
-
-### `yarn build:deploy:touchscreen`
-
-Deploys the Crestron CH5 `.ch5z` archive file from the dist folder to a touchscreen.
-
-### `yarn build:onestep:touchscreen`
-
-Executes the build, archive and deploy steps in sequence.
-
-### `yarn build:deploy:web`
-
-Deploy the Crestron CH5 `.ch5z` archive file from the dist folder to a control system.
-
-### `yarn build:onestep:web`
-
-Executes the build, archive and deploy steps in sequence.
-
-### `yarn eject`
+#### `yarn eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
@@ -180,7 +184,50 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### Crestron CH5
+
+#### `yarn build:archive`
+
+Builds a Crestron CH5 `.ch5z` archive file from the most recent build and outputs to the dist folder.
+
+#### `yarn build:deploy:touchscreen`
+
+Deploys the Crestron CH5 `.ch5z` archive file from the dist folder to a touchscreen.
+
+#### `yarn build:onestep:touchscreen`
+
+Executes the build, archive and deploy steps in sequence.
+
+#### `yarn build:deploy:web`
+
+Deploy the Crestron CH5 `.ch5z` archive file from the dist folder to a control system.
+
+#### `yarn build:onestep:web`
+
+Executes the build, archive and deploy steps in sequence.
+
+### Docker
+
+#### `yarn build:docker`
+
+Builds the application into a lightweight Docker image.\
+Creates a Docker container from the image running on the port specified in the `.env` file.\
+The default port is `8080`.\
+You can then view your application at [http://localhost:8080](http://localhost:8080).
+
+### Electron
+
+#### `yarn build:electron`
+
+Builds the application into a standalone Electron desktop application.
+
+#### `yarn electron:dev`
+
+Starts the Electron application in development mode.\
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+## Learn More :books:
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
