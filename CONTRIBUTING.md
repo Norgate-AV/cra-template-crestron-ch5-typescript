@@ -6,26 +6,26 @@ If you are proposing a new feature, make sure to [open an issue](https://github.
 
 ## Setup :technologist:
 
-1.  Fork this repository to your own GitHub account and clone the development branch to your local device:
+1. Fork this repository to your own GitHub account and clone the development branch to your local device:
 
     ```bash
     git clone -b develop https://github.com/Norgate-AV-Solutions-Ltd/cra-template-crestron-ch5-typescript.git
     cd cra-template-crestron-ch5-typescript
     ```
 
-2.  Install the dependencies:
+2. Install the dependencies:
 
     ```bash
     yarn
     ```
 
-3.  Create a new branch and start working on it:
+3. Create a new branch and start working on it:
 
     ```bash
     git checkout -b my-feature
     ```
 
-4.  Commit your changes:
+4. Commit your changes:
 
     ```bash
     git commit -m "feat(my-feature): my feature description"
@@ -47,7 +47,7 @@ This project follows the [all-contributors](https://allcontributors.org) specifi
 
 You can add yourself in one of two ways:
 
-1.  Comment on the Pull Request, asking the @all-contributors bot to add you to the contributors list.
+1. Comment on the Pull Request, asking the @all-contributors bot to add you to the contributors list.
 
     ```
     @all-contributors please add @<username> for <contributions>
@@ -55,7 +55,7 @@ You can add yourself in one of two ways:
 
     > or
 
-2.  Run the `yarn contrib:add` command to add yourself to the contributors list.
+2. Run the `yarn contrib:add` command to add yourself to the contributors list.
 
     ```bash
     yarn contrib:add <username> <contribution>,<contribution>,...
