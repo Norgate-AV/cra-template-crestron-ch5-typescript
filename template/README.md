@@ -2,6 +2,28 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+## Contents 📖
+
+-   [Inside the Box :package:](#inside-the-box-package)
+-   [Enable Husky Git Hooks :dog:](#enable-husky-git-hooks-dog)
+-   [Project Configuration :zap:](#project-configuration-zap)
+-   [Available Scripts](#available-scripts)
+    -   [`yarn start`](#yarn-start)
+    -   [`yarn test`](#yarn-test)
+    -   [`yarn build`](#yarn-build)
+    -   [`yarn build:archive`](#yarn-buildarchive)
+    -   [`yarn build:deploy:touchscreen`](#yarn-builddeploytouchscreen)
+    -   [`yarn build:onestep:touchscreen`](#yarn-buildonesteptouchscreen)
+    -   [`yarn build:deploy:web`](#yarn-builddeployweb)
+    -   [`yarn build:onestep:web`](#yarn-buildonestepweb)
+    -   [`yarn eject`](#yarn-eject)
+-   [Learn More](#learn-more)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Inside the Box :package:
 
 -   [Crestron CH5 CrComLib](https://www.npmjs.com/package/@crestron/ch5-crcomlib)
