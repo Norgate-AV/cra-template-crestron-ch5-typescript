@@ -225,7 +225,7 @@ You can then view your application at [http://localhost:8080](http://localhost:8
 
 #### `yarn build:electron`
 
-Builds the application into a standalone Electron desktop application.
+Builds the application into a standalone Electron desktop application and outputs to the app directory.
 
 #### `yarn electron:dev`
 
@@ -237,7 +237,7 @@ You will also see any lint errors in the console.
 
 #### `yarn clean:all`
 
-Deletes the `build` and `dist` directories.
+Deletes the `app`, `build` and `dist` directories.
 
 #### `yarn commit`
 
