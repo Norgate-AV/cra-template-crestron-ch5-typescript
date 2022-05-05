@@ -19,9 +19,10 @@
             "styled-components": "^5.3.3"
         },
         "scripts": {
+            "clean:app": "rimraf app",
             "clean:build": "rimraf build",
             "clean:dist": "rimraf dist",
-            "clean:all": "yarn clean:build && yarn clean:dist",
+            "clean:all": "yarn clean:app && yarn clean:build && yarn clean:dist",
             "copylib": "run-script-os",
             "copylib:default": "ncp $npm_package_crestron_crcomlib_bundle_path_umd public/$npm_package_crestron_crcomlib_bundle_name",
             "copylib:windows": "ncp %npm_package_crestron_crcomlib_bundle_path_umd% public/%npm_package_crestron_crcomlib_bundle_name%",
@@ -49,7 +50,7 @@
             "commit": "git-cz",
             "husky:install": "husky install",
             "pretty:fix": "prettier --write .",
-            "build:electron": "yarn build && electron-builder -wml",
+            "build:electron": "yarn clean:app && electron-builder -wml",
             "electron:dev": "concurrently \"cross-env BROWSER=none yarn start\" \"wait-on http://127.0.0.1:3000 && electron .\""
         },
         "eslintConfig": {
