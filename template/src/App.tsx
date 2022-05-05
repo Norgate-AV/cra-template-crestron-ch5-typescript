@@ -1,5 +1,5 @@
 import React from "react";
-import reactLogo from "./logo.svg";
+import reactLogo from "./assets/logo.svg";
 import ch5Logo from "./assets/crestron-ch5-logo.png";
 import "./App.css";
 import { useAppSelector } from "./redux/hooks";

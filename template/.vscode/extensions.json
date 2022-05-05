@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "editorconfig.editorconfig",
+        "dsznajder.es7-react-js-snippets",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "zenclabs.previewjs",
+        "jingkaizhao.vscode-redux-devtools",
+        "bradlc.vscode-tailwindcss",
+        "styled-components.vscode-styled-components",
+        "mikestead.dotenv",
+        "vivaxy.vscode-conventional-commits"
+    ]
+}

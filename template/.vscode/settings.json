@@ -1,9 +1,17 @@
 {
     "typescript.validate.enable": true,
+    "tailwindCSS.emmetCompletions": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
+    "editor.quickSuggestions": {
+        "strings": true
+    },
     "files.trimTrailingWhitespace": true,
+    "files.autoSave": "onFocusChange",
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
     "[markdown]": {
         "files.trimTrailingWhitespace": false
     },

@@ -1,0 +1,18 @@
+{
+    "extends": null,
+    "mac": {
+        "artifactName": "${productName}-${version}-mac.${ext}",
+        "category": "public.app-category.utilities"
+    },
+    "linux": {
+        "artifactName": "${productName}-${version}-${arch}-linux.${ext}",
+        "target": ["tar.gz", "snap", "AppImage"]
+    },
+    "win": {
+        "artifactName": "${productName}-${version}-${arch}-win.${ext}"
+    },
+    "files": ["electron/**/*", "build/**/*", "node_modules/**/*"],
+    "directories": {
+        "output": "app"
+    }
+}

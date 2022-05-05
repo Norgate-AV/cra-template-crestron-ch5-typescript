@@ -1,0 +1,92 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    name: Build, lint, and test on Node ${{ matrix.node }} and ${{ matrix.os }}
+
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 17.x]
+        os: [ubuntu-latest, macOS-latest, windows-latest]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install (with cache)
+        uses: bahmutov/npm-install@v1
+
+      - name: Pretty
+        run: yarn pretty:fix
+
+      - name: Test
+        run: yarn test
+
+      - name: Build
+        run: yarn build
+
+      - name: Create Template (npx)
+        run: |
+          pwd
+          cd ${{ github.workspace }}/..
+          pwd
+          npx create-react-app npx-test --template file:${{ github.workspace }}
+          cd npx-test
+          pwd
+          npm run test
+          npm run build
+          npm run build:archive
+          npm run build:electron
+
+      - name: Create Template (yarn)
+        run: |
+          pwd
+          cd ${{ github.workspace }}/..
+          pwd
+          yarn create react-app yarn-test --template file:${{ github.workspace }}
+          cd yarn-test
+          pwd
+          yarn test
+          yarn build
+          yarn build:archive
+          yarn build:electron
+
+  publish:
+    runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/heads/master' }}
+
+    needs: [build]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install (with cache)
+        uses: bahmutov/npm-install@v1
+
+      - name: Build
+        run: yarn build
+
+      - name: Release
+        run: yarn semantic-release
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_AUTHOR_NAME: ${{ secrets.SEMANTIC_RELEASE_GIT_NAME }}
+          GIT_AUTHOR_EMAIL: ${{ secrets.SEMANTIC_RELEASE_GIT_EMAIL }}
+          GIT_COMMITTER_NAME: ${{ secrets.SEMANTIC_RELEASE_GIT_NAME }}
+          GIT_COMMITTER_EMAIL: ${{ secrets.SEMANTIC_RELEASE_GIT_EMAIL }}
