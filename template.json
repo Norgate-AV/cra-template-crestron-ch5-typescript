@@ -50,7 +50,11 @@
             "commit": "git-cz",
             "husky:install": "husky install",
             "pretty:fix": "prettier --write .",
-            "build:electron": "yarn clean:app && electron-builder -wml",
+            "build:electron": "run-script-os",
+            "build:electron:macos": "yarn clean:app && electron-builder --mac",
+            "build:electron:windows": "yarn clean:app && electron-builder --win",
+            "build:electron:default": "yarn clean:app && electron-builder --linux",
+            "build:electron:all": "yarn clean:app && electron-builder -wml",
             "electron:dev": "concurrently \"cross-env BROWSER=none yarn start\" \"wait-on http://127.0.0.1:3000 && electron .\""
         },
         "eslintConfig": {
