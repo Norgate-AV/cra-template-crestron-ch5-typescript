@@ -45,6 +45,7 @@ jobs:
           npm run test
           npm run build
           npm run build:archive
+          npm run build:electron
 
       - name: Create Template (yarn)
         run: |
@@ -57,6 +58,7 @@ jobs:
           yarn test
           yarn build
           yarn build:archive
+          yarn build:electron
 
   publish:
     runs-on: ubuntu-latest
