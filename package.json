@@ -1,13 +1,18 @@
 {
     "name": "@norgate-av/cra-template-crestron-ch5-typescript",
-    "version": "0.0.0-development",
+    "version": "0.6.0",
     "keywords": [
         "ch5",
         "crestron",
         "react",
         "create-react-app",
         "template",
-        "typescript"
+        "typescript",
+        "docker",
+        "electron",
+        "tailwindcss",
+        "redux",
+        "styled-components"
     ],
     "description": "Crestron CH5 TypeScript template for Create React App.",
     "main": "template.json",

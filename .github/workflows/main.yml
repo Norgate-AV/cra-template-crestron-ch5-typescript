@@ -45,6 +45,7 @@ jobs:
           npm run test
           npm run build
           npm run build:archive
+          npm run build:electron
 
       - name: Create Template (yarn)
         run: |
@@ -57,6 +58,7 @@ jobs:
           yarn test
           yarn build
           yarn build:archive
+          yarn build:electron
 
   publish:
     runs-on: ubuntu-latest
@@ -67,6 +69,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          persist-credentials: false
 
       - name: Setup Node ${{ matrix.node-version }}
         uses: actions/setup-node@v2
@@ -83,7 +87,7 @@ jobs:
         run: yarn semantic-release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
           GIT_AUTHOR_NAME: ${{ secrets.SEMANTIC_RELEASE_GIT_NAME }}
           GIT_AUTHOR_EMAIL: ${{ secrets.SEMANTIC_RELEASE_GIT_EMAIL }}
           GIT_COMMITTER_NAME: ${{ secrets.SEMANTIC_RELEASE_GIT_NAME }}
