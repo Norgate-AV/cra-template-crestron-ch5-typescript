@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   build:
-    name: Build, lint, and test on Node ${{ matrix.node }} and ${{ matrix.os }}
+    name: Build, lint, and test on Node ${{ matrix.node-version }} and ${{ matrix.os }}
 
     runs-on: ${{ matrix.os }}
 
@@ -24,6 +24,8 @@ jobs:
 
       - name: Install (with cache)
         uses: bahmutov/npm-install@v1
+        with:
+          install-command: yarn --frozen-lockfile --network-timeout 1000000
 
       - name: Pretty
         run: yarn pretty:fix
@@ -79,6 +81,8 @@ jobs:
 
       - name: Install (with cache)
         uses: bahmutov/npm-install@v1
+        with:
+          install-command: yarn --frozen-lockfile --network-timeout 1000000
 
       - name: Build
         run: yarn build
