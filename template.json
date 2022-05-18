@@ -27,6 +27,7 @@
             "copylib:default": "ncp $npm_package_crestron_crcomlib_bundle_path_umd public/$npm_package_crestron_crcomlib_bundle_name",
             "copylib:windows": "ncp %npm_package_crestron_crcomlib_bundle_path_umd% public/%npm_package_crestron_crcomlib_bundle_name%",
             "start": "yarn resolve:crcomlib && yarn copylib && react-scripts start",
+            "test": "yarn resolve:crcomlib && react-scripts test",
             "build": "yarn clean:build && yarn resolve:crcomlib && yarn copylib && react-scripts build",
             "serve": "serve -s build",
             "build-and-serve": "yarn build && yarn serve",
