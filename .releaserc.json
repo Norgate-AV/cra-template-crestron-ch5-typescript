@@ -5,6 +5,7 @@
         [
             "@semantic-release/commit-analyzer",
             {
+                "preset": "conventionalcommits",
                 "releaseRules": [
                     { "type": "docs", "scope": "README", "release": "patch" },
                     { "type": "refactor", "release": "patch" },
@@ -22,6 +23,7 @@
         [
             "@semantic-release/release-notes-generator",
             {
+                "preset": "conventionalcommits",
                 "parserOpts": {
                     "noteKeywords": [
                         "BREAKING CHANGE",
@@ -31,6 +33,18 @@
                 },
                 "writerOpts": {
                     "commitsSort": ["subject", "scope"]
+                }
+                "presetConfig": {
+                    "types": [
+                        { "type": "feat", "section": "Features" },
+                        { "type": "fix", "section": "Bug Fixes" },
+                        { "type": "chore", "hidden": true },
+                        { "type": "docs", "hidden": true },
+                        { "type": "style", "hidden": true },
+                        { "type": "refactor", "hidden": true },
+                        { "type": "perf", "hidden": true },
+                        { "type": "test", "hidden": true }
+                    ]   
                 }
             }
         ],
