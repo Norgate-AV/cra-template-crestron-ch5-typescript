@@ -145,8 +145,8 @@
             "wait-on": "^6.0.1"
         },
         "lint-staged": {
-            "*.{js,jsx,ts,tsx}": ["yarn lint:fix", "yarn pretty:fix"],
-            "*.{css,scss,md,html,json,yml,yaml}": ["yarn pretty:fix"]
+            "*.{js,jsx,ts,tsx}": ["eslint --fix", "prettier --write"],
+            "*.{css,scss,md,html,json,yml,yaml}": ["prettier --write"]
         },
         "config": {
             "commitizen": {
