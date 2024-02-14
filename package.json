@@ -58,10 +58,10 @@
     },
     "lint-staged": {
         "*?(test|spec).{js,jsx,ts,tsx}": [
-            "yarn pretty:fix"
+            "prettier --write"
         ],
         "*.{css,scss,md,html,json,yml,yaml}": [
-            "yarn pretty:fix"
+            "prettier --write"
         ]
     },
     "config": {

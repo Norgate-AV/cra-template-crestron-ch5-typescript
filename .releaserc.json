@@ -44,7 +44,7 @@
                         { "type": "refactor", "section": "Refactor" },
                         { "type": "perf", "section": "Performance" },
                         { "type": "test", "hidden": true }
-                    ]   
+                    ]
                 }
             }
         ],
