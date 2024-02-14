@@ -7,10 +7,10 @@
 
 ---
 
-[![CI](https://github.com/Norgate-AV-Solutions-Ltd/cra-template-crestron-ch5-typescript/actions/workflows/main.yml/badge.svg?branch=develop)](https://github.com/Norgate-AV-Solutions-Ltd/cra-template-crestron-ch5-typescript/actions/workflows/main.yml)
+[![CI](https://github.com/Norgate-AV/cra-template-crestron-ch5-typescript/actions/workflows/main.yml/badge.svg?branch=develop)](https://github.com/Norgate-AV/cra-template-crestron-ch5-typescript/actions/workflows/main.yml)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![GitHub contributors](https://img.shields.io/github/contributors/Norgate-AV-Solutions-Ltd/cra-template-crestron-ch5-typescript)](#contributors)
+[![GitHub contributors](https://img.shields.io/github/contributors/Norgate-AV/cra-template-crestron-ch5-typescript)](#contributors)
 [![NPM](https://img.shields.io/npm/v/@norgate-av/cra-template-crestron-ch5-typescript.svg)](https://www.npmjs.com/package/@norgate-av/cra-template-crestron-ch5-typescript)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
@@ -166,7 +166,7 @@ To upload to a Crestron touchscreen or control system using the scripts provided
 
 ## Team :soccer:
 
-This project is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/Norgate-AV-Solutions-Ltd/cra-template-crestron-ch5-typescript/graphs/contributors).
+This project is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/Norgate-AV/cra-template-crestron-ch5-typescript/graphs/contributors).
 
 <table>
   <tr>
