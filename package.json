@@ -55,13 +55,5 @@
         "lint-staged": "^13.0.0",
         "prettier": "^2.6.2",
         "semantic-release": "^19.0.2"
-    },
-    "lint-staged": {
-        "*?(test|spec).{js,jsx,ts,tsx}": [
-            "prettier --write"
-        ],
-        "*.{css,scss,md,html,json,yml,yaml}": [
-            "prettier --write"
-        ]
     }
 }
