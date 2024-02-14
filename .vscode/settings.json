@@ -31,6 +31,6 @@
         }
     },
     "editor.codeActionsOnSave": {
-        "source.fixAll.markdownlint": true
+        "source.fixAll.markdownlint": "explicit"
     }
 }
