@@ -16,6 +16,13 @@
 
 ---
 
+**NOTE: THIS REPO IS NOW ARCHIVED**
+
+> Create React App has effectively been deprecated, and they (the CRA team) recommend using tools like Vite to bootstrap projects now. Styled Components has recently been deprecated too.
+> As a result, I'm not going to be applying any fixes or improvements to this package.
+> I may look into creating a more lightweight template for Vite. Last I checked, Vite does not have any native templating capabilities built into the tool, instead relying on tools like `degit` for this.
+> There is also the issue related to how Crestron packages CH5, which would need to be resolved.
+
 An unofficial third party TypeScript template for [Create React App](https://github.com/facebook/create-react-app) and [Crestron CH5](https://www.npmjs.com/package/@crestron/ch5-crcomlib).
 
 Setup to work with Crestron CH5 out of the box so you can get up and running quickly. It provides packages for page routing, styling using [CSS-in-JS](https://en.wikipedia.org/wiki/CSS-in-JS) and/or [TailwindCSS](https://tailwindcss.com/) (you can still use regular CSS, SCSS or even [CSS Modules](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/) 😄), a wide variety of icons, mobile browser console, linting and more... 🚀 🚀 🚀
